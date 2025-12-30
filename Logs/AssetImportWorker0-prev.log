@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50511
+50749
 Successfully changed project path to: /Users/magdalenaplawinska/Desktop/CatchThem /LicencjatCDV
 /Users/magdalenaplawinska/Desktop/CatchThem /LicencjatCDV
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,17 +58,15 @@ Successfully changed project path to: /Users/magdalenaplawinska/Desktop/CatchThe
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8761385152]  Target information:
 
-Player connection [8761385152]  * "[IP] 192.168.0.32 [Port] 0 [Flags] 2 [Guid] 538878455 [EditorId] 538878455 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8761385152]  * "[IP] 192.168.0.32 [Port] 0 [Flags] 2 [Guid] 1158591941 [EditorId] 1158591941 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8761385152]  * "[IP] 169.254.218.182 [Port] 0 [Flags] 2 [Guid] 538878455 [EditorId] 538878455 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
-
-Player connection [8761385152]  * "[IP] 169.254.52.17 [Port] 0 [Flags] 2 [Guid] 538878455 [EditorId] 538878455 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8761385152]  * "[IP] 169.254.52.17 [Port] 0 [Flags] 2 [Guid] 1158591941 [EditorId] 1158591941 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8761385152] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8761385152] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-Refreshing native plugins compatible for Editor in 2.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.62f2 (7670c08855a9)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Resources/UnitySubsystems
@@ -83,17 +81,17 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56609
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56342
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000535 seconds.
-- Loaded All Assemblies, in  0.141 seconds
+Registered in 0.001693 seconds.
+- Loaded All Assemblies, in  0.178 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.112 seconds
-Domain Reload Profiling: 254ms
-	BeginReloadAssembly (32ms)
+- Finished resetting the current domain, in  0.113 seconds
+Domain Reload Profiling: 290ms
+	BeginReloadAssembly (66ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -101,26 +99,26 @@ Domain Reload Profiling: 254ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (16ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (66ms)
-		LoadAssemblies (32ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (68ms)
+		LoadAssemblies (66ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (65ms)
-			TypeCache.Refresh (65ms)
+		AnalyzeDomain (67ms)
+			TypeCache.Refresh (66ms)
 				TypeCache.ScanAssembly (59ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (112ms)
+	FinalizeReload (113ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (90ms)
+		SetupLoadedEditorAssemblies (91ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
+			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (64ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			ProcessInitializeOnLoadAttributes (63ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -129,43 +127,43 @@ Domain Reload Profiling: 254ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.260 seconds
+- Loaded All Assemblies, in  0.324 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.269 seconds
-Domain Reload Profiling: 529ms
-	BeginReloadAssembly (52ms)
+- Finished resetting the current domain, in  0.279 seconds
+Domain Reload Profiling: 603ms
+	BeginReloadAssembly (57ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
+		CreateAndSetChildDomain (12ms)
 	RebuildCommonClasses (17ms)
 	RebuildNativeTypeToScriptingClass (5ms)
 	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (170ms)
-		LoadAssemblies (87ms)
+	LoadAllAssembliesAndSetupDomain (230ms)
+		LoadAssemblies (145ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (106ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (86ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (97ms)
+				TypeCache.ScanAssembly (87ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (269ms)
+	FinalizeReload (279ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (200ms)
+		SetupLoadedEditorAssemblies (205ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (138ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (142ms)
 			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -174,12 +172,12 @@ WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5155 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (364.4 KB). Loaded Objects now: 5632.
-Memory consumption went from 216.5 MB to 216.2 MB.
-Total: 1.892667 ms (FindLiveObjects: 0.135125 ms CreateObjectMapping: 0.046833 ms MarkObjects: 1.599166 ms  DeleteObjects: 0.110792 ms)
+Unloading 5156 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (363.9 KB). Loaded Objects now: 5633.
+Memory consumption went from 217.7 MB to 217.4 MB.
+Total: 2.045958 ms (FindLiveObjects: 0.117875 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.734458 ms  DeleteObjects: 0.144333 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -196,533 +194,125 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 38656.567943 seconds.
-  path: Assets/Materials/ball.mat
-  artifactKey: Guid(02070cc19e2984c5b92f0f0735b1e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/ball.mat using Guid(02070cc19e2984c5b92f0f0735b1e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'b3a6d324792939351c69cb6d1e6e19c1') in 0.116924 seconds
+  Time since last request: 43903.829733 seconds.
+  path: Assets/Shader/shader/New Universal Render Pipeline Asset.asset
+  artifactKey: Guid(8f731740a03c44fe1b58016a8e8c2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/shader/New Universal Render Pipeline Asset.asset using Guid(8f731740a03c44fe1b58016a8e8c2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '055e5514fe084e7e32c9c06390250520') in 0.004824 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 38.527103 seconds.
-  path: Assets/NewShader.unitypackage
-  artifactKey: Guid(b42131e819ff04dadad3fc14f13ceaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewShader.unitypackage using Guid(b42131e819ff04dadad3fc14f13ceaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'dde5015039fd3e3c705c434355484552') in 0.000584 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 24.818921 seconds.
-  path: Assets/Shader
-  artifactKey: Guid(e08606b9b08884e5db7b14e42c3a4c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader using Guid(e08606b9b08884e5db7b14e42c3a4c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '3aa149bbbb72426bc0748e11d30c6006') in 0.000289 seconds
-Number of updated asset objects reloaded before import = 2
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.510726 seconds.
-  path: Assets/Shader/shader/New Material.mat
-  artifactKey: Guid(2c06a8195f46b422683e6476fe503e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/New Material.mat using Guid(2c06a8195f46b422683e6476fe503e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+  Time since last request: 161.593542 seconds.
+  path: Assets/Textures/Texture_clouds_first.png
+  artifactKey: Guid(b7f60ab3780f641b59ceded9911f13d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Texture_clouds_first.png using Guid(b7f60ab3780f641b59ceded9911f13d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '7e51b6dbd8b796979e0545590275ffd4') in 2.869005 seconds
+ -> (artifact id: '151b6ceda36e5b7e2e10664b1b9e2eed') in 0.025203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Textures/Texture_clouds_third.png
+  artifactKey: Guid(e65e96822c8cc487dbea947b71c8160f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Texture_clouds_third.png using Guid(e65e96822c8cc487dbea947b71c8160f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '052e8d0abc983a4e41bdb5c950d0cf8e') in 0.003448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.926811 seconds.
+  path: Assets/Textures/Texture_clouds_third.png
+  artifactKey: Guid(e65e96822c8cc487dbea947b71c8160f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Texture_clouds_third.png using Guid(e65e96822c8cc487dbea947b71c8160f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '56c28bf9dc40907a5111b479c8b58dad') in 0.022802 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 11.026436 seconds.
-  path: Assets/profiles/New Universal Render Pipeline Asset.asset
-  artifactKey: Guid(8f731740a03c44fe1b58016a8e8c2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/profiles/New Universal Render Pipeline Asset.asset using Guid(8f731740a03c44fe1b58016a8e8c2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'd60697abc098a1d5dcb55c1a3b1c4c3b') in 0.001033 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Switching render pipeline 8f731740a03c44fe1b58016a8e8c2c16 -> 00000000000000000000000000000000
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3 unused Assets / (323.7 KB). Loaded Objects now: 5767.
-Memory consumption went from 138.3 MB to 138.0 MB.
-Total: 2.457625 ms (FindLiveObjects: 0.127250 ms CreateObjectMapping: 0.048750 ms MarkObjects: 2.223709 ms  DeleteObjects: 0.057458 ms)
-
-Prepare: number of updated asset objects reloaded= 3
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 22.523776 seconds.
-  path: Assets/Shader/shader/CustomLighting.hlsl
-  artifactKey: Guid(5c09ec492074d214fbe1a19781ad15e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/CustomLighting.hlsl using Guid(5c09ec492074d214fbe1a19781ad15e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '3540f86bf30da7540dae1bf01741dfa4') in 0.000556 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Shader/shader/New Material.mat
-  artifactKey: Guid(2c06a8195f46b422683e6476fe503e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/New Material.mat using Guid(2c06a8195f46b422683e6476fe503e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+  Time since last request: 7.981045 seconds.
+  path: Assets/Textures/Texture_clouds_second.png
+  artifactKey: Guid(3a3c8bdb0c8664334b112714ed601582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Texture_clouds_second.png using Guid(3a3c8bdb0c8664334b112714ed601582) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '0dc1b162b454f22da1f33ef5ba669030') in 0.006519 seconds
+ -> (artifact id: 'c9fde2f1eff1d12bb4cceb1ab90fe9b2') in 0.006250 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Shader/shader/OutlinesInclude.hlsl
-  artifactKey: Guid(58d407c00cb024bb0aedef0976541017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/OutlinesInclude.hlsl using Guid(58d407c00cb024bb0aedef0976541017) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '1f51a082781394c4503f8a577bea03a7') in 0.000490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.625185 seconds.
-  path: Assets/Shader/shader/SubGraphs/Ambient SampleSH.shadersubgraph
-  artifactKey: Guid(e13fbf63d7907af4ab4988492ac7bca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/SubGraphs/Ambient SampleSH.shadersubgraph using Guid(e13fbf63d7907af4ab4988492ac7bca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '747b1923a2fb30c13b97a385b27fa5d1') in 0.002236 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Shader/shader/SubGraphs/Subtractive GI.shadersubgraph
-  artifactKey: Guid(3898ebeae7050e741a924ad695a7a8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/SubGraphs/Subtractive GI.shadersubgraph using Guid(3898ebeae7050e741a924ad695a7a8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '79d2bf4d6d3070f9f91eb7a166905a87') in 0.000851 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Shader/shader/SubGraphs/Main Light Shadows.shadersubgraph
-  artifactKey: Guid(f3ba9248037f69f429d9e52bc2e30940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/SubGraphs/Main Light Shadows.shadersubgraph using Guid(f3ba9248037f69f429d9e52bc2e30940) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'ce288d424796f8753afff03ffd245bcf') in 0.000529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Shader/shader/SubGraphs/Main Light Layer Test.shadersubgraph
-  artifactKey: Guid(ff89f0e401734344bb3b63ca6d1c4bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shader/shader/SubGraphs/Main Light Layer Test.shadersubgraph using Guid(ff89f0e401734344bb3b63ca6d1c4bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '2d878acd51f1fea5fd41596c912372fa') in 0.000500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.213053 seconds.
-  path: Assets/Materials/FBX_Door.mat
-  artifactKey: Guid(11adfb2cfa1ed4cc1ac48a7ce71393ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/FBX_Door.mat using Guid(11adfb2cfa1ed4cc1ac48a7ce71393ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+  Time since last request: 5.826761 seconds.
+  path: Assets/Textures/Texture_clouds_first.png
+  artifactKey: Guid(b7f60ab3780f641b59ceded9911f13d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Texture_clouds_first.png using Guid(b7f60ab3780f641b59ceded9911f13d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'be762decf6f591862fce4cfcf014fe27') in 1.649178 seconds
+ -> (artifact id: '591ddb7e1c41b146298ec4185be1fd0f') in 0.005757 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4 unused Assets / (326.3 KB). Loaded Objects now: 5769.
-Memory consumption went from 140.0 MB to 139.7 MB.
-Total: 2.334292 ms (FindLiveObjects: 0.139500 ms CreateObjectMapping: 0.049541 ms MarkObjects: 2.081375 ms  DeleteObjects: 0.063667 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 117.267705 seconds.
-  path: Assets/Materials/FBX_Door.mat
-  artifactKey: Guid(11adfb2cfa1ed4cc1ac48a7ce71393ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/FBX_Door.mat using Guid(11adfb2cfa1ed4cc1ac48a7ce71393ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '1c8ce0b515738529de74aec3fa61af4c') in 0.120929 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 203.304621 seconds.
+  Time since last request: 30.000866 seconds.
   path: Assets/Materials/ball.mat
   artifactKey: Guid(02070cc19e2984c5b92f0f0735b1e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/ball.mat using Guid(02070cc19e2984c5b92f0f0735b1e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '40006fac9e6e85115d41884642069d52') in 3.720575 seconds
+ -> (artifact id: 'afe416f503ffd31f5671e9bfe8082275') in 0.112737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Materials/Plane.mat
+  artifactKey: Guid(765c2efc46ac2446eb7fc0abe53c3d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Plane.mat using Guid(765c2efc46ac2446eb7fc0abe53c3d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'f520fdd4fcfed79d501eff8752ae43e4') in 0.006779 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
-Received Import Request.
-  Time since last request: 4.010913 seconds.
-  path: Assets/models/FBX_Lamp_cables.fbx
-  artifactKey: Guid(a3d700b8a2b834eb5b955b668754306d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/FBX_Lamp_cables.fbx using Guid(a3d700b8a2b834eb5b955b668754306d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '7557af7d7be42e82d391457bb08b794c') in 0.063620 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Thread 0x318487000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.207 seconds
+Thread 0x319607000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.226 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.723 seconds
-Domain Reload Profiling: 930ms
+- Finished resetting the current domain, in  0.766 seconds
+Domain Reload Profiling: 992ms
 	BeginReloadAssembly (74ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
+		CreateAndSetChildDomain (27ms)
 	RebuildCommonClasses (16ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (9ms)
-	LoadAllAssembliesAndSetupDomain (101ms)
-		LoadAssemblies (116ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (723ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (196ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (32ms)
-			ProcessInitializeOnLoadAttributes (131ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4996 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (345.4 KB). Loaded Objects now: 5733.
-Memory consumption went from 225.6 MB to 225.3 MB.
-Total: 2.259333 ms (FindLiveObjects: 0.165125 ms CreateObjectMapping: 0.048750 ms MarkObjects: 1.928833 ms  DeleteObjects: 0.116417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x17f587000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.179 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.383 seconds
-Domain Reload Profiling: 562ms
-	BeginReloadAssembly (66ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (17ms)
-	RebuildNativeTypeToScriptingClass (5ms)
 	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (80ms)
-		LoadAssemblies (94ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (124ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
-			TypeCache.Refresh (3ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (384ms)
+	FinalizeReload (766ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (195ms)
+		SetupLoadedEditorAssemblies (174ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (129ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4996 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (345.6 KB). Loaded Objects now: 5740.
-Memory consumption went from 229.5 MB to 229.2 MB.
-Total: 2.139167 ms (FindLiveObjects: 0.170959 ms CreateObjectMapping: 0.046958 ms MarkObjects: 1.808542 ms  DeleteObjects: 0.112375 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x16fdb3000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.180 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.389 seconds
-Domain Reload Profiling: 569ms
-	BeginReloadAssembly (66ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (17ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (81ms)
-		LoadAssemblies (95ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (389ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (196ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (132ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4996 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (345.6 KB). Loaded Objects now: 5747.
-Memory consumption went from 233.5 MB to 233.1 MB.
-Total: 2.262041 ms (FindLiveObjects: 0.157625 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.947417 ms  DeleteObjects: 0.107542 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x16fdb3000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.180 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.380 seconds
-Domain Reload Profiling: 560ms
-	BeginReloadAssembly (65ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (17ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (82ms)
-		LoadAssemblies (96ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (380ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (193ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (130ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4996 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (344.9 KB). Loaded Objects now: 5754.
-Memory consumption went from 237.4 MB to 237.1 MB.
-Total: 2.004542 ms (FindLiveObjects: 0.154667 ms CreateObjectMapping: 0.042375 ms MarkObjects: 1.710250 ms  DeleteObjects: 0.096708 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x16fdb3000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.181 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.381 seconds
-Domain Reload Profiling: 562ms
-	BeginReloadAssembly (66ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (17ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (83ms)
-		LoadAssemblies (96ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (10ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (381ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (192ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (30ms)
-			ProcessInitializeOnLoadAttributes (130ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -732,13 +322,14 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4996 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (345.0 KB). Loaded Objects now: 5761.
-Memory consumption went from 241.4 MB to 241.1 MB.
-Total: 2.225625 ms (FindLiveObjects: 0.170000 ms CreateObjectMapping: 0.046083 ms MarkObjects: 1.907458 ms  DeleteObjects: 0.101584 ms)
+Unloading 21 unused Assets / (345.0 KB). Loaded Objects now: 5725.
+Memory consumption went from 217.9 MB to 217.6 MB.
+Total: 2.096333 ms (FindLiveObjects: 0.170333 ms CreateObjectMapping: 0.049083 ms MarkObjects: 1.790500 ms  DeleteObjects: 0.086125 ms)
 
-Prepare: number of updated asset objects reloaded= 0
+Prepare: number of updated asset objects reloaded= 2
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/BlitMaterialFeature.cs: ee9178ac2c57c92d195e0f4318025130 -> 8c23d86c36580c50e311c5d8cb74b344
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
@@ -747,85 +338,81 @@ AssetImportParameters requested are different than current active one (requested
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/DepthNormalsFeature.cs: 74e2477fe2f5010da61c16de781ada09 -> 2437743a1a7638da2e44e525c7f5cac8
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x16fdb3000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.180 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.383 seconds
-Domain Reload Profiling: 564ms
-	BeginReloadAssembly (67ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (16ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (81ms)
-		LoadAssemblies (96ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (383ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (195ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (31ms)
-			ProcessInitializeOnLoadAttributes (132ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4996 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (345.5 KB). Loaded Objects now: 5768.
-Memory consumption went from 245.4 MB to 245.0 MB.
-Total: 2.338208 ms (FindLiveObjects: 0.210583 ms CreateObjectMapping: 0.048000 ms MarkObjects: 1.957459 ms  DeleteObjects: 0.121458 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 45610cdecd6bb30999c653341b4d32b4 -> cba3786f99e601d4a815429abed69c2e
 ========================================================================
 Received Import Request.
-  Time since last request: 395.422137 seconds.
+  Time since last request: 22.403731 seconds.
+  path: Assets/Shader/New Material.mat
+  artifactKey: Guid(2c06a8195f46b422683e6476fe503e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/New Material.mat using Guid(2c06a8195f46b422683e6476fe503e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'bdb96452632bbe1e0d19c66efcf87824') in 2.502149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 6.163943 seconds.
+  path: Assets/Shader/shader/profiles
+  artifactKey: Guid(d6385f62ff90349cbb354d0d41518b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/shader/profiles using Guid(d6385f62ff90349cbb354d0d41518b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '77102a551ac13967a63825ef9085646d') in 0.000397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 246.459177 seconds.
+  path: Assets/Materials/ball.mat
+  artifactKey: Guid(02070cc19e2984c5b92f0f0735b1e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ball.mat using Guid(02070cc19e2984c5b92f0f0735b1e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '8a0d1bac7c7da2ac242ebb6653f3a0e0') in 4.714352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Materials/FBX_Table_stool.mat
+  artifactKey: Guid(3959b8b865b4449f8b866d667611d5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/FBX_Table_stool.mat using Guid(3959b8b865b4449f8b866d667611d5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'f8175799f64ff3a34a5ea21311a5a2e8') in 0.007741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Materials/FBX_Lamp_cables.mat
+  artifactKey: Guid(4bbf240e987e34945b4a01dac5d8eae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/FBX_Lamp_cables.mat using Guid(4bbf240e987e34945b4a01dac5d8eae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '519859cf8b8377c9503d15113c2bf368') in 0.005452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
   path: Assets/Materials/walls.mat
   artifactKey: Guid(4c634613939f74b86a19554c27cdf19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materials/walls.mat using Guid(4c634613939f74b86a19554c27cdf19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '3ff146d062e3311278176935280d94da') in 0.102302 seconds
-Number of updated asset objects reloaded before import = 1
-Number of asset objects unloaded after import = 21
+ -> (artifact id: 'b1bd47b4daddb15ccdf44194fd61263d') in 0.003988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Materials/FBX_Lamp_main.mat
+  artifactKey: Guid(cbe2aac1e8af34a83a10ad373380954a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/FBX_Lamp_main.mat using Guid(cbe2aac1e8af34a83a10ad373380954a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'c47d437bf6d440190c3cfdc3ad25f7d2') in 0.004585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
