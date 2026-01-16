@@ -31,6 +31,7 @@ public class NewBehaviourScript : MonoBehaviour, IInteractable
         }
         else
         {
+            me.velocity = new Vector2(0,0);
             pulling = false;
             interactor.gameObject.GetComponent<Movement>().Push();
         } 

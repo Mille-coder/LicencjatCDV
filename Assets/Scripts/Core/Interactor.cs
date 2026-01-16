@@ -28,7 +28,11 @@ public class Interactor : MonoBehaviour
 
             if( interactable != null)
             {
-                return true;
+                if(interactable.CanInteract(this))
+                {
+                    return true;
+                }
+                
             }
 
             return false;
