@@ -8,9 +8,12 @@ public class Break : MonoBehaviour, IInteractable
     {
         if (interactor.gameObject.GetComponent<Equipment>().hasAxe == true)
         {
+            Debug.Log("true");
             return true;
         }
+        Debug.Log("false");
         return false;
+
     }
 
     public bool Interact(Interactor interactor)
