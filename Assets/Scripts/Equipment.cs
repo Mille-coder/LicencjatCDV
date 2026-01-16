@@ -5,8 +5,12 @@ using UnityEngine;
 public class Equipment : MonoBehaviour
 {
     [SerializeField] GameObject axe;
+    public bool hasAxe = false;
     public void Grabaxe()
     {
+
         axe.SetActive(true);
+
+        hasAxe = true;
     }
 }

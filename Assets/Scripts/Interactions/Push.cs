@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour, IInteractable
 {
-    private bool pulling = false;
+    [SerializeField] private bool pulling = false;
     private float movespeed = 3;
     [SerializeField] private Rigidbody me;
-    public bool CanInteract()
+    public bool CanInteract(Interactor interactor)
     {
         return true;
     }

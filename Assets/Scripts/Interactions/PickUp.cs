@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour, IInteractable
 {
-    public bool CanInteract()
+    public bool CanInteract(Interactor interactor)
     {
         return true;
     }
