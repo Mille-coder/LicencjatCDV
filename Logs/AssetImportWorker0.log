@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49208
+49752
 Successfully changed project path to: /Users/magdalenaplawinska/Desktop/CatchThem /LicencjatCDV
 /Users/magdalenaplawinska/Desktop/CatchThem /LicencjatCDV
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,13 +58,13 @@ Successfully changed project path to: /Users/magdalenaplawinska/Desktop/CatchThe
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8531815488]  Target information:
 
-Player connection [8531815488]  * "[IP] 192.168.0.32 [Port] 0 [Flags] 2 [Guid] 2476757427 [EditorId] 2476757427 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8531815488]  * "[IP] 192.168.0.32 [Port] 0 [Flags] 2 [Guid] 3054377865 [EditorId] 3054377865 [Version] 1048832 [Id] OSXEditor(0,Mac-mini-Magdalena.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8531815488] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8531815488] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-Refreshing native plugins compatible for Editor in 3.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 4.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.62f2 (7670c08855a9)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Resources/UnitySubsystems
@@ -79,44 +79,44 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56402
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000635 seconds.
+Registered in 0.000556 seconds.
 - Loaded All Assemblies, in  0.134 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.111 seconds
-Domain Reload Profiling: 245ms
-	BeginReloadAssembly (33ms)
+- Finished resetting the current domain, in  0.094 seconds
+Domain Reload Profiling: 228ms
+	BeginReloadAssembly (41ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (15ms)
+	RebuildCommonClasses (13ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (61ms)
-		LoadAssemblies (33ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (58ms)
+		LoadAssemblies (40ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (60ms)
-			TypeCache.Refresh (60ms)
-				TypeCache.ScanAssembly (54ms)
+		AnalyzeDomain (57ms)
+			TypeCache.Refresh (57ms)
+				TypeCache.ScanAssembly (50ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (111ms)
+	FinalizeReload (94ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (90ms)
+		SetupLoadedEditorAssemblies (76ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (59ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
+			ProcessInitializeOnLoadAttributes (53ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,43 +125,43 @@ Domain Reload Profiling: 245ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.275 seconds
+- Loaded All Assemblies, in  0.284 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.283 seconds
-Domain Reload Profiling: 558ms
+- Finished resetting the current domain, in  0.249 seconds
+Domain Reload Profiling: 533ms
 	BeginReloadAssembly (50ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (8ms)
-	RebuildCommonClasses (14ms)
+		CreateAndSetChildDomain (7ms)
+	RebuildCommonClasses (13ms)
 	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (191ms)
-		LoadAssemblies (109ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (202ms)
+		LoadAssemblies (128ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (106ms)
-			TypeCache.Refresh (91ms)
-				TypeCache.ScanAssembly (82ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (283ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (88ms)
+				TypeCache.ScanAssembly (77ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (249ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (212ms)
+		SetupLoadedEditorAssemblies (185ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (151ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -170,12 +170,12 @@ WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5426 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (412.8 KB). Loaded Objects now: 5912.
-Memory consumption went from 228.0 MB to 227.6 MB.
-Total: 2.961417 ms (FindLiveObjects: 0.192875 ms CreateObjectMapping: 0.046834 ms MarkObjects: 2.419166 ms  DeleteObjects: 0.301959 ms)
+Unloading 5401 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (413.2 KB). Loaded Objects now: 5887.
+Memory consumption went from 224.9 MB to 224.5 MB.
+Total: 2.108875 ms (FindLiveObjects: 0.128375 ms CreateObjectMapping: 0.044458 ms MarkObjects: 1.806459 ms  DeleteObjects: 0.129167 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -194,98 +194,12 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-Thread 0x1739c7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.193 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.696 seconds
-Domain Reload Profiling: 889ms
-	BeginReloadAssembly (57ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
-	RebuildCommonClasses (15ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (106ms)
-		LoadAssemblies (110ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (696ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (171ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (118ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (418.9 KB). Loaded Objects now: 5923.
-Memory consumption went from 200.8 MB to 200.4 MB.
-Total: 1.964916 ms (FindLiveObjects: 0.138917 ms CreateObjectMapping: 0.073083 ms MarkObjects: 1.655625 ms  DeleteObjects: 0.096667 ms)
-
-Prepare: number of updated asset objects reloaded= 8
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:CFXRDemo:  -> cc0ff1e316a2729626f162f6771b661f
-  custom:scripting/precompiled-assembly-types:CFXREditor:  -> 208c3af22db142123aba5816f8aa1b45
-  custom:scripting/precompiled-assembly-types:ToonyColorsPro.Demo.Editor:  -> 6b694ea541e62ce2d03a0131e66c5b89
-  custom:scripting/precompiled-assembly-types:CFXRRuntime:  -> 453c18230450fd24f51e90fe9655b7ef
-  custom:scripting/precompiled-assembly-types:CFXR.WelcomeScreen:  -> e308a2494ec7b1eea3ee27540cbddee3
-  custom:scripting/monoscript/fileName/CFXR_Effect.cs:  -> 89a84f4034a055b67e3b9e093a314fda
-  custom:scripting/precompiled-assembly-types:KinoBloom.Runtime:  -> fd8e0c14623ea1bc5e8eaca3fd20f83a
-========================================================================
-Received Import Request.
-  Time since last request: 1649.136171 seconds.
-  path: Assets/Textures/Texture_background.png
-  artifactKey: Guid(71ffdb4ac06fb4308a78d7697b02b8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Texture_background.png using Guid(71ffdb4ac06fb4308a78d7697b02b8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: '6e6bc845f622b24219f4b05bd4d81b5c') in 0.026858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x16e3c7000 may have been prematurely finalized
+Thread 0x17da07000 may have been prematurely finalized
 - Loaded All Assemblies, in  0.178 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.812 seconds
-Domain Reload Profiling: 991ms
+- Finished resetting the current domain, in  0.863 seconds
+Domain Reload Profiling: 1042ms
 	BeginReloadAssembly (55ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (2ms)
@@ -298,99 +212,23 @@ Domain Reload Profiling: 991ms
 	LoadAllAssembliesAndSetupDomain (95ms)
 		LoadAssemblies (108ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (813ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (237ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (163ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (414.9 KB). Loaded Objects now: 5937.
-Memory consumption went from 204.3 MB to 203.9 MB.
-Total: 2.415250 ms (FindLiveObjects: 0.174667 ms CreateObjectMapping: 0.047250 ms MarkObjects: 2.009833 ms  DeleteObjects: 0.183084 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:CFXRDemo:  -> cc0ff1e316a2729626f162f6771b661f
-  custom:scripting/precompiled-assembly-types:CFXREditor:  -> 208c3af22db142123aba5816f8aa1b45
-  custom:scripting/precompiled-assembly-types:ToonyColorsPro.Demo.Editor:  -> 6b694ea541e62ce2d03a0131e66c5b89
-  custom:scripting/precompiled-assembly-types:CFXRRuntime:  -> 453c18230450fd24f51e90fe9655b7ef
-  custom:scripting/precompiled-assembly-types:CFXR.WelcomeScreen:  -> e308a2494ec7b1eea3ee27540cbddee3
-  custom:scripting/monoscript/fileName/CFXR_Effect.cs:  -> 89a84f4034a055b67e3b9e093a314fda
-  custom:scripting/precompiled-assembly-types:KinoBloom.Runtime:  -> fd8e0c14623ea1bc5e8eaca3fd20f83a
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-Thread 0x16e3c7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.178 seconds
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.768 seconds
-Domain Reload Profiling: 947ms
-	BeginReloadAssembly (55ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (12ms)
-	RebuildCommonClasses (14ms)
-	RebuildNativeTypeToScriptingClass (5ms)
-	initialDomainReloadingComplete (9ms)
-	LoadAllAssembliesAndSetupDomain (95ms)
-		LoadAssemblies (108ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
+		AnalyzeDomain (10ms)
 			TypeCache.Refresh (4ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (768ms)
+	FinalizeReload (863ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (206ms)
+		SetupLoadedEditorAssemblies (218ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (140ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (148ms)
 			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
@@ -400,12 +238,12 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5240 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (415.0 KB). Loaded Objects now: 5956.
-Memory consumption went from 208.1 MB to 207.6 MB.
-Total: 2.166500 ms (FindLiveObjects: 0.168917 ms CreateObjectMapping: 0.044333 ms MarkObjects: 1.823292 ms  DeleteObjects: 0.129416 ms)
+Unloading 22 unused Assets / (415.1 KB). Loaded Objects now: 5906.
+Memory consumption went from 200.4 MB to 200.0 MB.
+Total: 2.718667 ms (FindLiveObjects: 0.192875 ms CreateObjectMapping: 0.077417 ms MarkObjects: 2.310083 ms  DeleteObjects: 0.137875 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -421,33 +259,16 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:scripting/precompiled-assembly-types:CFXRDemo:  -> cc0ff1e316a2729626f162f6771b661f
-  custom:scripting/precompiled-assembly-types:CFXREditor:  -> 208c3af22db142123aba5816f8aa1b45
-  custom:scripting/precompiled-assembly-types:ToonyColorsPro.Demo.Editor:  -> 6b694ea541e62ce2d03a0131e66c5b89
-  custom:scripting/precompiled-assembly-types:CFXRRuntime:  -> 453c18230450fd24f51e90fe9655b7ef
-  custom:scripting/precompiled-assembly-types:CFXR.WelcomeScreen:  -> e308a2494ec7b1eea3ee27540cbddee3
-  custom:scripting/monoscript/fileName/CFXR_Effect.cs:  -> 89a84f4034a055b67e3b9e093a314fda
-  custom:scripting/precompiled-assembly-types:KinoBloom.Runtime:  -> fd8e0c14623ea1bc5e8eaca3fd20f83a
 ========================================================================
 Received Import Request.
-  Time since last request: 106.034561 seconds.
-  path: Assets/prefabs/Ledge.prefab
-  artifactKey: Guid(d43f13fc69a0c364d88a43d8ca238706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabs/Ledge.prefab using Guid(d43f13fc69a0c364d88a43d8ca238706) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'fe2a50819ac4fe8eafea693f27bcdfba') in 0.027955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 9.153476 seconds.
-  path: Assets/models/FBX_Branch.fbx
-  artifactKey: Guid(8e4a7543c57b54475b0c0b3ae9d74d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/models/FBX_Branch.fbx using Guid(8e4a7543c57b54475b0c0b3ae9d74d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+  Time since last request: 19878.373138 seconds.
+  path: Assets/Textures/Texture_floor.png
+  artifactKey: Guid(85939080b08144729bbd8f6a0bda413d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Texture_floor.png using Guid(85939080b08144729bbd8f6a0bda413d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
- -> (artifact id: 'a2d6d5cb754d14ac99562c131b1af6d3') in 0.164048 seconds
+ -> (artifact id: 'adf226ae588c4842f6a0393b69a15100') in 0.091187 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
+Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
 AssetImportWorker is now disconnected from the server
