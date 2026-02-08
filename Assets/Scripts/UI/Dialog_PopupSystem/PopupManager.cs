@@ -45,7 +45,7 @@ public class PopupManager : MonoBehaviour
 
     public void ShowPopup(Collider trigger)
     {
-        // poka¿ tylko raz
+        // pokaï¿½ tylko raz
         if (shownPopups.Contains(trigger))
             return;
 
