@@ -26,6 +26,8 @@ public class QTESystem : MonoBehaviour
         public float speed;
     }
 
+    private float currentSpeed = 1;
+
     private HashSet<QTETrigger> wonQTEs = new HashSet<QTETrigger>();
     private Dictionary<QTETrigger, QTEData> QTELookup;
 
@@ -45,11 +47,14 @@ public class QTESystem : MonoBehaviour
                 QTELookup.Add(QTE.trigger, QTE);
         }
         QTEPanel.SetActive(false);
+
+       
     }
 
     void FixedUpdate()
     {
-        marker.rectTransform.Rotate(new Vector3(0, 0, -1));
+        
+        marker.rectTransform.Rotate(new Vector3(0, 0, currentSpeed));
         if (!QTEPanel.activeSelf)
         {
             successField.rectTransform.Rotate(new Vector3(0, 0, -2));
@@ -66,7 +71,7 @@ public class QTESystem : MonoBehaviour
                 float markerAngle = marker.rectTransform.eulerAngles.z;
                 float successAngle = successField.rectTransform.eulerAngles.z;
 
-                    if (markerAngle < successAngle && markerAngle > successAngle - 36)
+                    if (markerAngle < successAngle && markerAngle > successAngle - 360*successField.fillAmount)
                     {
                         QTEPanel.SetActive(false);
                         GlobalEvents.RaiseOnMovementOn();
@@ -87,6 +92,12 @@ public class QTESystem : MonoBehaviour
         if (!QTELookup.ContainsKey(trigger))
             return;
         var data = QTELookup[trigger];
+
+        var thisqtedata = QTELookup[trigger];
+
+    // Set success field size based on difficulty
+        successField.fillAmount = Mathf.Clamp01(data.difficulty);
+        currentSpeed = data.speed;
 
         QTEPanel.SetActive(true);
         GlobalEvents.RaiseOnMovementOff();

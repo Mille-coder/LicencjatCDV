@@ -13900,6 +13900,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 02070cc19e2984c5b92f0f0735b1e19d, type: 2}
+    - target: {fileID: 8963025832900032291, guid: ff7259b49369d60488bdae58d6548571, type: 3}
+      propertyPath: raycastOffset.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 204895599863751212, guid: ff7259b49369d60488bdae58d6548571, type: 3}
     m_RemovedGameObjects: []
@@ -21099,7 +21103,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.247, y: 0, z: -2.32}
-  m_LocalScale: {x: 1, y: 3.2899, z: 1}
+  m_LocalScale: {x: 0.5914364, y: 3.2899, z: 1.4395}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 619741502}
@@ -24237,11 +24241,11 @@ MonoBehaviour:
   marker: {fileID: 732230261}
   QTEs:
   - trigger: {fileID: 793424678}
-    difficulty: 0
-    speed: 0
+    difficulty: 0.1
+    speed: 1
   - trigger: {fileID: 1667085524}
-    difficulty: 0
-    speed: 0
+    difficulty: 0.2
+    speed: 3
 --- !u!4 &1864274398
 Transform:
   m_ObjectHideFlags: 0
