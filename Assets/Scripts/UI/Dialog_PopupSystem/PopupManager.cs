@@ -45,7 +45,7 @@ public class PopupManager : MonoBehaviour
 
     public void ShowPopup(Collider trigger)
     {
-        // poka� tylko raz
+        // pokaż tylko raz
         if (shownPopups.Contains(trigger))
             return;
 
@@ -57,6 +57,8 @@ public class PopupManager : MonoBehaviour
         var data = popupLookup[trigger];
 
         popupPanel.SetActive(true);
+
+        GlobalEvents.RaiseOnMovementOff();
 
         // reset coroutine
         if (typingCoroutine != null)
@@ -84,7 +86,9 @@ public class PopupManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        
+       
+        GlobalEvents.RaiseOnMovementOn();
+
         autoHideCoroutine = StartCoroutine(AutoHide());
     }
 
