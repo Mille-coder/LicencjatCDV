@@ -5,7 +5,8 @@ public static class GlobalEvents
 {
     public static event Action OnMovementOff;
     public static event Action OnMovementOn;
-    public static event Action QTEFailed;
+    public static event Action OnSlowOn;
+    public static event Action OnSlowOff;
 
     public static void RaiseOnMovementOff()
     {
@@ -18,8 +19,13 @@ public static class GlobalEvents
         OnMovementOn?.Invoke();
     }
 
-    public static void RaiseQTEFailed()
+    public static void RaiseOnSlowOn()
     {
-        QTEFailed?.Invoke();
+        OnSlowOn?.Invoke();
+    }
+
+    public static void RaiseOnSlowOff()
+    {
+        OnSlowOff?.Invoke();
     }
 }

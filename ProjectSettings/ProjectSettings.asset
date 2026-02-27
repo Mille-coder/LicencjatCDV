@@ -286,7 +286,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 4e8f1502946514f39abe975fc4283e92, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
@@ -743,19 +750,19 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: SORTIFY
-    EmbeddedLinux: SORTIFY
-    GameCoreXboxOne: SORTIFY
-    Nintendo Switch: SORTIFY
-    PS4: SORTIFY
-    PS5: SORTIFY
-    QNX: SORTIFY
-    Stadia: SORTIFY
-    Standalone: SORTIFY
-    VisionOS: SORTIFY
-    WebGL: SORTIFY
-    XboxOne: SORTIFY
-    tvOS: SORTIFY
+    Android: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    EmbeddedLinux: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    GameCoreXboxOne: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    Nintendo Switch: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    PS4: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    PS5: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    QNX: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    Stadia: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    VisionOS: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    WebGL: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    XboxOne: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
+    tvOS: SORTIFY;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

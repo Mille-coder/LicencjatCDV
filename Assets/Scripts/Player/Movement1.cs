@@ -16,11 +16,26 @@ public class Movement : MonoBehaviour
 
     private bool hanging = false;
     private Rigidbody playerRB;
+
+    int slow = 1;
     
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
     }
+
+    private void OnEnable()
+    {
+        GlobalEvents.OnSlowOff += SlowOff;
+        GlobalEvents.OnSlowOn += SlowOn;
+    }
+
+    private void OnDisable()
+    {
+        GlobalEvents.OnSlowOff -= SlowOff;
+        GlobalEvents.OnSlowOn -= SlowOn;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -38,7 +53,7 @@ public class Movement : MonoBehaviour
         {
             if (grounded == true )
         {
-            playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * movespeed , playerRB.velocity.y);
+            playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * movespeed/slow , playerRB.velocity.y);
 
             if (Input.GetButtonDown("Jump") && pushing == false)
             {
@@ -116,5 +131,15 @@ public class Movement : MonoBehaviour
     public void Push()
     {
         pushing = !pushing;
+    }
+
+    private void SlowOn()
+    {
+        slow  = 2;
+    }
+
+    private void SlowOff()
+    {
+        slow = 1;
     }
 }
