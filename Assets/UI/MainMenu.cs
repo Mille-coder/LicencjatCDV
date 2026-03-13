@@ -5,11 +5,17 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public string newGameScene;
+    public GameObject OptionsMenu;
 
     public void NewGame()
     {
         SceneManager.LoadScene(newGameScene);
         Debug.Log("New Game Clicked");
+    }
+
+    public void Options()
+    {
+        OptionsMenu.SetActive(true);
     }
 
     public void QuitGame()
