@@ -1,0 +1,595 @@
+Unity Editor version:    2022.3.62f2 (7670c08855a9)
+Branch:                  2022.3/respin/2022.3.62f2-4af31df585-v2
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.3.1 (a) (Build 25D771280a)
+Darwin version:          25.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/magdalenaplawinska/LicencjatCDV
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49269
+Successfully changed project path to: /Users/magdalenaplawinska/LicencjatCDV
+/Users/magdalenaplawinska/LicencjatCDV
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8424780032]  Target information:
+
+Player connection [8424780032]  * "[IP] 192.168.0.32 [Port] 0 [Flags] 2 [Guid] 3865632654 [EditorId] 3865632654 [Version] 1048832 [Id] OSXEditor(0,MacMiniMagda.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8424780032] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8424780032] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+Refreshing native plugins compatible for Editor in 10.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f2 (7670c08855a9)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/magdalenaplawinska/LicencjatCDV/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M4 (high power)
+Metal devices available: 1
+0: Apple M4 (high power)
+Using device Apple M4 (high power)
+Initializing Metal device caps: Apple M4
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56378
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001502 seconds.
+- Loaded All Assemblies, in  0.162 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.100 seconds
+Domain Reload Profiling: 262ms
+	BeginReloadAssembly (61ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (62ms)
+		LoadAssemblies (62ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (60ms)
+			TypeCache.Refresh (59ms)
+				TypeCache.ScanAssembly (53ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (100ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (81ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (56ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.330 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.284 seconds
+Domain Reload Profiling: 615ms
+	BeginReloadAssembly (48ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (7ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (170ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (104ms)
+			TypeCache.Refresh (91ms)
+				TypeCache.ScanAssembly (81ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (284ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (218ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (161ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5752 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (3.7 MB). Loaded Objects now: 6218.
+Memory consumption went from 337.0 MB to 333.3 MB.
+Total: 2.666416 ms (FindLiveObjects: 0.146625 ms CreateObjectMapping: 0.062333 ms MarkObjects: 1.909792 ms  DeleteObjects: 0.547167 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 350.862191 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(16eb1a3048bae4a03967210ac979874b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(16eb1a3048bae4a03967210ac979874b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '0d822c755706e2937e468695cb3f3c92') in 0.012100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x177847000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.233 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.829 seconds
+Domain Reload Profiling: 1062ms
+	BeginReloadAssembly (62ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (141ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (829ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (166ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Script is not up to date after domain reload: guid(900b3aad6b15043e3965a63ae7ed08c3) path("Assets/Plugins/FMOD/platforms/win/lib/x86/fmodstudioL.dll") state(2)
+Script is not up to date after domain reload: guid(55109366b3ea5492aa89675a13e5baaa) path("Assets/Plugins/FMOD/platforms/win/lib/x86_64/fmodstudioL.dll") state(2)
+Script is not up to date after domain reload: guid(119d8d2bd88094898b8ae38f3e3cdecd) path("Assets/Plugins/FMOD/platforms/linux/lib/x86_64/libfmodstudioL.so") state(2)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6310.
+Memory consumption went from 298.2 MB to 294.5 MB.
+Total: 2.500500 ms (FindLiveObjects: 0.159584 ms CreateObjectMapping: 0.051708 ms MarkObjects: 1.921083 ms  DeleteObjects: 0.367792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/RuntimeManager.cs: a7baba0d635715e960cd1eb21c904b85 -> 
+  custom:scripting/monoscript/fileName/RuntimeUtils.cs: cb1a05c969a59e1ccb9d3731f37efcbb -> 
+  custom:scripting/monoscript/fileName/StudioEventEmitterEditor.cs: 63a2fce485d575d4e494c8d3578ebe5e -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/SettingsEditor.cs: 1694fe9b1a04a26f6f5d5616ed823a7b -> 
+  custom:scripting/monoscript/fileName/StudioParameterTrigger.cs: 7d27ca1e0c6f6c0bdd548901b62717c3 -> 
+  custom:scripting/monoscript/fileName/PlatformWebGL.cs: e0afef3569473e24c0564957ad4bf1be -> 
+  custom:scripting/monoscript/fileName/PlatformAppleTV.cs: bf70a2c655dd83e3cf22d3f750c51a30 -> 
+  custom:scripting/monoscript/fileName/PlatformAndroid.cs: 186a29fc52fdbfed90736ed64ae646fe -> 
+  custom:scripting/monoscript/fileName/EditorUtils.cs: 9e97256e152eec1cc95f40cd23975f71 -> c68cd8a7363f08bfc0eb17cb07da36ad
+  custom:scripting/monoscript/fileName/fmod.cs: d187c07970c25edeead218e399f1c2d1 -> 
+  custom:scripting/monoscript/fileName/FileReorganizer.cs: 64e32ba2a26f6ae45e17e7ac3158047e -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/SetupWizard.cs: 86831d5a0559b1fbae9a919e3c113e8e -> 
+  custom:scripting/monoscript/fileName/StudioBankLoaderEditor.cs: 910be23c7ab3813247bcc9456daf33e5 -> 
+  custom:scripting/precompiled-assembly-types:FMODUnityResonance: b38ad5289dab959e0535a4082d807861 -> 
+  custom:scripting/monoscript/fileName/PlatformMobileLow.cs: 8baeab5be4bbf4ec3a408a939bdf4b39 -> 
+  custom:scripting/monoscript/fileName/ParamRefAttribute.cs: 2141bf0922d30d3af3acd880437e5e7c -> 
+  custom:scripting/monoscript/fileName/BoltIntegration.cs: ec61196fc9279e061b9143f459af76cf -> 
+  custom:scripting/monoscript/fileName/FmodResonanceAudioRoomEditor.cs: d5fa86b707062a6dfbb34940afc584c9 -> 
+  custom:scripting/monoscript/fileName/PlatformLinux.cs: edff2fb45fb90e1890d0db62097a9ca5 -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:scripting/monoscript/fileName/EditorEventRef.cs: 7ec2f56018af5a1ea0021335e37c2fa5 -> 
+  custom:scripting/monoscript/fileName/StudioEventEmitter.cs: 80d7c27079eeaa05f8d6da598e0d9725 -> 
+  custom:scripting/monoscript/fileName/Platform.cs: 562860890ea11074a4da55505876f82f -> 3dec73b58e385eeb1aa8945a90fdd163
+  custom:scripting/monoscript/fileName/BankRefAttribute.cs: d0917a092a234e7e012360f5e0f30f7e -> 
+  custom:scripting/monoscript/fileName/FindAndReplace.cs: 5cd40abc17642d9ba9af99555650077f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BankRefresher.cs: 93a892ca2e779082151dc6dc52f987f8 -> 
+  custom:scripting/precompiled-assembly-types:FMODUnityResonanceEditor: d259e7e31f0bdb11fe5e251f118ade1b -> 
+  custom:scripting/monoscript/fileName/FMODEventTrack.cs: 3636a96f9ad9c0f484e65b65f2b3104f -> 
+  custom:scripting/precompiled-assembly-types:FMODUnityEditor: 2dceb88de46b14bfd71d61697e48747e -> 
+  custom:scripting/monoscript/fileName/EditorParamRef.cs: 5fccdf1f7659917841b23a3f8f8f2ff6 -> 
+  custom:scripting/monoscript/fileName/EventReferenceUpdater.cs: 3c42156bb924e6e3058beebd5f00ede0 -> 
+  custom:scripting/monoscript/fileName/StudioListener.cs: 01c2e1ee422e8ea147a5948cd4c905d2 -> 
+  custom:scripting/monoscript/fileName/CreateEventPopup.cs: d110540f35999a0df5f68b4c8ffd0401 -> 
+  custom:scripting/monoscript/fileName/FMODEventPlayableEditor.cs: 4c920b43505334eed5ec92cc8814a500 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/EventHandler.cs: e61958aded6cfb2fdb41b3176e08db3f -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/StudioGlobalParameterTrigger.cs: e64de1d2bb4a293d62d072387956ff29 -> 
+  custom:scripting/monoscript/fileName/EventRefAttribute.cs: 3b9973dd0bb1a37a3c5dc0456d36a84f -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/StudioListenerEditor.cs: d23b3130aa3c983a781c384198f55984 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/StudioBankLoader.cs: 7bb3910761e5278244f40efe5b6e6047 -> 
+  custom:scripting/monoscript/fileName/fmod_dsp.cs: 16bcd58cb5b38ed8f0fe129a1391345f -> 
+  custom:scripting/monoscript/fileName/EventCache.cs: 29ea73a0fe40a9033b59d7935e8a04b8 -> 
+  custom:scripting/monoscript/fileName/FMODEventPlayable.cs: dc05f53facdeadb722c08c64615a4f9e -> 
+  custom:scripting/monoscript/fileName/EventBrowser.cs: ffb132909b81af43f2a611bf8ee907d1 -> 
+  custom:scripting/monoscript/fileName/ListView.cs: e7f41e01dc951963102a3d5c5b325b17 -> 
+  custom:scripting/monoscript/fileName/AutomatableSlots.cs: 23c5a87f53e5226bde69f717a8f05345 -> 
+  custom:scripting/monoscript/fileName/StudioEventEmitterGizmoDrawer.cs: adbb59f7ec6cd0c88424293e45ede234 -> 
+  custom:scripting/monoscript/fileName/PlatformWindows.cs: 5f969282019d80939a795d405a9ce8e3 -> 
+  custom:scripting/monoscript/fileName/ParamRefDrawer.cs: b830a71d0904880e7471acdacec25cb3 -> 
+  custom:scripting/monoscript/fileName/StudioGlobalParameterTriggerEditor.cs: 2b3af603eb013b95055e9b29942dc2d9 -> 
+  custom:scripting/monoscript/fileName/EventManager.cs: 6ba6d78d97a0f2df457c63216dee86be -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/EditorSettings.cs: cb51e8f0de6fc1ad28d41e84f8e043a9 -> 
+  custom:scripting/monoscript/fileName/EventReference.cs: 5e89a106abb667077f27a619d4d72bd2 -> 
+  custom:scripting/monoscript/fileName/FMODRuntimeManagerOnGUIHelper.cs: 684119f34fba3a7394fa6fac17e122e6 -> 
+  custom:scripting/monoscript/fileName/FMODEventTrackEditor.cs: a6061726519ea5dba7af96ff473b2aa7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/fmod_studio.cs: a0880ac3672a1b61889dc48eb00634d8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlatformDefault.cs: 036849b49495a41d1a82441189864a81 -> 
+  custom:scripting/monoscript/fileName/PlatformPlayInEditor.cs: 60820c4f1ad7cf133371cfdbef6392c9 -> 
+  custom:scripting/monoscript/fileName/EventRefDrawer.cs: 6823a0ec3421556613b07a680d9169ee -> 
+  custom:scripting/monoscript/fileName/BankRefDrawer.cs: b31c5b042c34b958fea5c52c9c260c1c -> 
+  custom:scripting/monoscript/fileName/BankRefreshWindow.cs: 9267d6ec3db1d2108264e11895c3e645 -> 
+  custom:scripting/precompiled-assembly-types:FMODUnity: a9de7e0b1bd06c0595dec7167698b95d -> 
+  custom:scripting/monoscript/fileName/ParamRef.cs: cb8de576d71aab104bf85dbaef4754e2 -> 
+  custom:scripting/monoscript/fileName/PlatformMac.cs: 4d0693195c3e543720e97e65baba4991 -> 
+  custom:scripting/monoscript/fileName/FmodResonanceAudioRoom.cs: c6a3b321487b14117b710454f92d2991 -> 
+  custom:scripting/monoscript/fileName/PlatformVisionOS.cs: dde6c2af4e93a668afca5341789ba2f1 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/fmod_errors.cs: 2ce5a9ec49919752977b95ba9573efb0 -> 
+  custom:scripting/monoscript/fileName/Settings.cs: e07e0aaef2d28b9ed15bd62374a0d72f -> ea9d1b04d3864b3b689bed16ba2743db
+  custom:scripting/monoscript/fileName/PlatformIOS.cs: a2528b7580b797a91108517af980e8d7 -> 
+  custom:scripting/monoscript/fileName/CodeGeneration.cs: 4b2854260f3aeae74067b32478f4881e -> 
+  custom:scripting/monoscript/fileName/StudioParameterTriggerEditor.cs: 037edbe06a2844277dfd8fb1be99245c -> 
+  custom:scripting/monoscript/fileName/PlatformMobileHigh.cs: a8e21803b4bba307108ad958f3515022 -> 
+  custom:scripting/monoscript/fileName/FmodResonanceAudio.cs: 7cce707e64f4005a5219059b854302aa -> 
+  custom:scripting/monoscript/fileName/EditorBankRef.cs: 59de7f3df63bcd68b0cb3bfb0ecc0465 -> 
+  custom:scripting/monoscript/fileName/PlatformGroup.cs: cfec7797bfb7d10c3de8aa4c60c1f1b4 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x171cbf000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.188 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.486 seconds
+Domain Reload Profiling: 674ms
+	BeginReloadAssembly (58ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (102ms)
+		LoadAssemblies (104ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (486ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (259ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (197ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 4.07 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6329.
+Memory consumption went from 300.8 MB to 297.1 MB.
+Total: 2.373542 ms (FindLiveObjects: 0.154333 ms CreateObjectMapping: 0.050375 ms MarkObjects: 1.774750 ms  DeleteObjects: 0.393708 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/RuntimeManager.cs: a7baba0d635715e960cd1eb21c904b85 -> 
+  custom:scripting/monoscript/fileName/RuntimeUtils.cs: cb1a05c969a59e1ccb9d3731f37efcbb -> 
+  custom:scripting/monoscript/fileName/StudioEventEmitterEditor.cs: 63a2fce485d575d4e494c8d3578ebe5e -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/SettingsEditor.cs: 1694fe9b1a04a26f6f5d5616ed823a7b -> 
+  custom:scripting/monoscript/fileName/StudioParameterTrigger.cs: 7d27ca1e0c6f6c0bdd548901b62717c3 -> 
+  custom:scripting/monoscript/fileName/PlatformWebGL.cs: e0afef3569473e24c0564957ad4bf1be -> 
+  custom:scripting/monoscript/fileName/PlatformAppleTV.cs: bf70a2c655dd83e3cf22d3f750c51a30 -> 
+  custom:scripting/monoscript/fileName/PlatformAndroid.cs: 186a29fc52fdbfed90736ed64ae646fe -> 
+  custom:scripting/monoscript/fileName/EditorUtils.cs: 9e97256e152eec1cc95f40cd23975f71 -> c68cd8a7363f08bfc0eb17cb07da36ad
+  custom:scripting/monoscript/fileName/fmod.cs: d187c07970c25edeead218e399f1c2d1 -> 
+  custom:scripting/monoscript/fileName/FileReorganizer.cs: 64e32ba2a26f6ae45e17e7ac3158047e -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/SetupWizard.cs: 86831d5a0559b1fbae9a919e3c113e8e -> 
+  custom:scripting/monoscript/fileName/StudioBankLoaderEditor.cs: 910be23c7ab3813247bcc9456daf33e5 -> 
+  custom:scripting/precompiled-assembly-types:FMODUnityResonance: b38ad5289dab959e0535a4082d807861 -> 
+  custom:scripting/monoscript/fileName/PlatformMobileLow.cs: 8baeab5be4bbf4ec3a408a939bdf4b39 -> 
+  custom:scripting/monoscript/fileName/ParamRefAttribute.cs: 2141bf0922d30d3af3acd880437e5e7c -> 
+  custom:scripting/monoscript/fileName/BoltIntegration.cs: ec61196fc9279e061b9143f459af76cf -> 
+  custom:scripting/monoscript/fileName/FmodResonanceAudioRoomEditor.cs: d5fa86b707062a6dfbb34940afc584c9 -> 
+  custom:scripting/monoscript/fileName/PlatformLinux.cs: edff2fb45fb90e1890d0db62097a9ca5 -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:scripting/monoscript/fileName/EditorEventRef.cs: 7ec2f56018af5a1ea0021335e37c2fa5 -> 
+  custom:scripting/monoscript/fileName/StudioEventEmitter.cs: 80d7c27079eeaa05f8d6da598e0d9725 -> 
+  custom:scripting/monoscript/fileName/Platform.cs: 562860890ea11074a4da55505876f82f -> 3dec73b58e385eeb1aa8945a90fdd163
+  custom:scripting/monoscript/fileName/BankRefAttribute.cs: d0917a092a234e7e012360f5e0f30f7e -> 
+  custom:scripting/monoscript/fileName/FindAndReplace.cs: 5cd40abc17642d9ba9af99555650077f -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BankRefresher.cs: 93a892ca2e779082151dc6dc52f987f8 -> 
+  custom:scripting/precompiled-assembly-types:FMODUnityResonanceEditor: d259e7e31f0bdb11fe5e251f118ade1b -> 
+  custom:scripting/monoscript/fileName/FMODEventTrack.cs: 3636a96f9ad9c0f484e65b65f2b3104f -> 
+  custom:scripting/precompiled-assembly-types:FMODUnityEditor: 2dceb88de46b14bfd71d61697e48747e -> 
+  custom:scripting/monoscript/fileName/EditorParamRef.cs: 5fccdf1f7659917841b23a3f8f8f2ff6 -> 
+  custom:scripting/monoscript/fileName/EventReferenceUpdater.cs: 3c42156bb924e6e3058beebd5f00ede0 -> 
+  custom:scripting/monoscript/fileName/StudioListener.cs: 01c2e1ee422e8ea147a5948cd4c905d2 -> 
+  custom:scripting/monoscript/fileName/CreateEventPopup.cs: d110540f35999a0df5f68b4c8ffd0401 -> 
+  custom:scripting/monoscript/fileName/FMODEventPlayableEditor.cs: 4c920b43505334eed5ec92cc8814a500 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/EventHandler.cs: e61958aded6cfb2fdb41b3176e08db3f -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/StudioGlobalParameterTrigger.cs: e64de1d2bb4a293d62d072387956ff29 -> 
+  custom:scripting/monoscript/fileName/EventRefAttribute.cs: 3b9973dd0bb1a37a3c5dc0456d36a84f -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/StudioListenerEditor.cs: d23b3130aa3c983a781c384198f55984 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/StudioBankLoader.cs: 7bb3910761e5278244f40efe5b6e6047 -> 
+  custom:scripting/monoscript/fileName/fmod_dsp.cs: 16bcd58cb5b38ed8f0fe129a1391345f -> 
+  custom:scripting/monoscript/fileName/EventCache.cs: 29ea73a0fe40a9033b59d7935e8a04b8 -> 
+  custom:scripting/monoscript/fileName/FMODEventPlayable.cs: dc05f53facdeadb722c08c64615a4f9e -> 
+  custom:scripting/monoscript/fileName/EventBrowser.cs: ffb132909b81af43f2a611bf8ee907d1 -> 
+  custom:scripting/monoscript/fileName/ListView.cs: e7f41e01dc951963102a3d5c5b325b17 -> 
+  custom:scripting/monoscript/fileName/AutomatableSlots.cs: 23c5a87f53e5226bde69f717a8f05345 -> 
+  custom:scripting/monoscript/fileName/StudioEventEmitterGizmoDrawer.cs: adbb59f7ec6cd0c88424293e45ede234 -> 
+  custom:scripting/monoscript/fileName/PlatformWindows.cs: 5f969282019d80939a795d405a9ce8e3 -> 
+  custom:scripting/monoscript/fileName/ParamRefDrawer.cs: b830a71d0904880e7471acdacec25cb3 -> 
+  custom:scripting/monoscript/fileName/StudioGlobalParameterTriggerEditor.cs: 2b3af603eb013b95055e9b29942dc2d9 -> 
+  custom:scripting/monoscript/fileName/EventManager.cs: 6ba6d78d97a0f2df457c63216dee86be -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/EditorSettings.cs: cb51e8f0de6fc1ad28d41e84f8e043a9 -> 
+  custom:scripting/monoscript/fileName/EventReference.cs: 5e89a106abb667077f27a619d4d72bd2 -> 
+  custom:scripting/monoscript/fileName/FMODRuntimeManagerOnGUIHelper.cs: 684119f34fba3a7394fa6fac17e122e6 -> 
+  custom:scripting/monoscript/fileName/FMODEventTrackEditor.cs: a6061726519ea5dba7af96ff473b2aa7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/fmod_studio.cs: a0880ac3672a1b61889dc48eb00634d8 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlatformDefault.cs: 036849b49495a41d1a82441189864a81 -> 
+  custom:scripting/monoscript/fileName/PlatformPlayInEditor.cs: 60820c4f1ad7cf133371cfdbef6392c9 -> 
+  custom:scripting/monoscript/fileName/EventRefDrawer.cs: 6823a0ec3421556613b07a680d9169ee -> 
+  custom:scripting/monoscript/fileName/BankRefDrawer.cs: b31c5b042c34b958fea5c52c9c260c1c -> 
+  custom:scripting/monoscript/fileName/BankRefreshWindow.cs: 9267d6ec3db1d2108264e11895c3e645 -> 
+  custom:scripting/precompiled-assembly-types:FMODUnity: a9de7e0b1bd06c0595dec7167698b95d -> 
+  custom:scripting/monoscript/fileName/ParamRef.cs: cb8de576d71aab104bf85dbaef4754e2 -> 
+  custom:scripting/monoscript/fileName/PlatformMac.cs: 4d0693195c3e543720e97e65baba4991 -> 
+  custom:scripting/monoscript/fileName/FmodResonanceAudioRoom.cs: c6a3b321487b14117b710454f92d2991 -> 
+  custom:scripting/monoscript/fileName/PlatformVisionOS.cs: dde6c2af4e93a668afca5341789ba2f1 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/fmod_errors.cs: 2ce5a9ec49919752977b95ba9573efb0 -> 
+  custom:scripting/monoscript/fileName/Settings.cs: e07e0aaef2d28b9ed15bd62374a0d72f -> ea9d1b04d3864b3b689bed16ba2743db
+  custom:scripting/monoscript/fileName/PlatformIOS.cs: a2528b7580b797a91108517af980e8d7 -> 
+  custom:scripting/monoscript/fileName/CodeGeneration.cs: 4b2854260f3aeae74067b32478f4881e -> 
+  custom:scripting/monoscript/fileName/StudioParameterTriggerEditor.cs: 037edbe06a2844277dfd8fb1be99245c -> 
+  custom:scripting/monoscript/fileName/PlatformMobileHigh.cs: a8e21803b4bba307108ad958f3515022 -> 
+  custom:scripting/monoscript/fileName/FmodResonanceAudio.cs: 7cce707e64f4005a5219059b854302aa -> 
+  custom:scripting/monoscript/fileName/EditorBankRef.cs: 59de7f3df63bcd68b0cb3bfb0ecc0465 -> 
+  custom:scripting/monoscript/fileName/PlatformGroup.cs: cfec7797bfb7d10c3de8aa4c60c1f1b4 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 270.519372 seconds.
+  path: Assets/prefabs/Fire.prefab
+  artifactKey: Guid(ccd84788cd7d8450aa2c4b92fe1bab99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Fire.prefab using Guid(ccd84788cd7d8450aa2c4b92fe1bab99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '628e0dc98697e6dbaa49598d39d88b2b') in 0.015064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/prefabs/Fire with Green.prefab
+  artifactKey: Guid(7ca0863305645466382a1a75352163f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Fire with Green.prefab using Guid(7ca0863305645466382a1a75352163f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'c911ad6855945f1d10f4f6a303b0426a') in 0.001046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/prefabs/fire_light.prefab
+  artifactKey: Guid(f08e41cc35d844153b5e34977670ed23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/fire_light.prefab using Guid(f08e41cc35d844153b5e34977670ed23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '383a622ffd43320ee9e98de116e4ded3') in 0.001141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/prefabs/Ledge.prefab
+  artifactKey: Guid(d43f13fc69a0c364d88a43d8ca238706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Ledge.prefab using Guid(d43f13fc69a0c364d88a43d8ca238706) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'e48479a7f19fefc415a7350468b918bc') in 0.001076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/prefabs/Wood Chips.prefab
+  artifactKey: Guid(f5d0198ba93ab4a68b839fa233576a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Wood Chips.prefab using Guid(f5d0198ba93ab4a68b839fa233576a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '9672aa4ab0250bdf575c2635df2f050a') in 0.113094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/prefabs/Player.prefab
+  artifactKey: Guid(ff7259b49369d60488bdae58d6548571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/Player.prefab using Guid(ff7259b49369d60488bdae58d6548571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '3025eab0cf9cb7a55705b4cad2e82b29') in 0.018065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/prefabs/smoke.prefab
+  artifactKey: Guid(29292481d4c75479788ce5ebeb3669cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/smoke.prefab using Guid(29292481d4c75479788ce5ebeb3669cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'b0d64701596dcbfde4097ec237ad860f') in 0.001013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 41.076071 seconds.
+  path: Assets/Art/FireFighter pack/FirefightersPack/Models/Exports/Vehicles/FireTruck1.fbx
+  artifactKey: Guid(49ce996c90eac604d8a3c8488c2a3bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FireFighter pack/FirefightersPack/Models/Exports/Vehicles/FireTruck1.fbx using Guid(49ce996c90eac604d8a3c8488c2a3bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '246b4e9cfd9bd30e3953850da3ed5955') in 0.212388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
