@@ -2237,6 +2237,15 @@
     },
     "m_Slots": [
         {
+            "m_Id": "f91d1b4c73c14d6da952768d2d6e8184"
+        },
+        {
+            "m_Id": "c3caf9137f7f44c8b8418d2ecc5778fd"
+        },
+        {
+            "m_Id": "b85cd7068d9244c184a33c46335ef115"
+        },
+        {
             "m_Id": "fc536e62bf384a6d8707e6e4780d04cc"
         }
     ],
@@ -2252,12 +2261,18 @@
     "m_PropertyGuids": [
         "706a248d-cd92-4451-a42b-d4f6414214e9",
         "28b3bb33-2e6f-456d-a9da-8732afa4b79b",
-        "62424b5e-df9f-42ff-85ad-f09e0e44ff3e"
+        "62424b5e-df9f-42ff-85ad-f09e0e44ff3e",
+        "de0883bb-c1a8-4bb7-8989-28145aac0d48",
+        "357f84ab-e66a-4061-9f3a-ac7ca89d666d",
+        "99dcca28-a106-4fbf-ade7-c1acaf73dc9d"
     ],
     "m_PropertyIds": [
         737902842,
         -990975142,
-        -2135786166
+        -2135786166,
+        -912627776,
+        1691665910,
+        -411107540
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -7193,7 +7208,7 @@
     "m_Title": "INTERACTION",
     "m_Position": {
         "x": 824.0,
-        "y": -117.00003051757813
+        "y": -117.0
     }
 }
 
@@ -11978,6 +11993,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "b85cd7068d9244c184a33c46335ef115",
+    "m_Id": -411107540,
+    "m_DisplayName": "Float",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Float",
+    "m_StageCapability": 3,
+    "m_Value": 2.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PositionMaterialSlot",
     "m_ObjectId": "b8e0953bb018473ea662080f4b109a05",
     "m_Id": 0,
@@ -12483,6 +12513,27 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "c3caf9137f7f44c8b8418d2ecc5778fd",
+    "m_Id": 1691665910,
+    "m_DisplayName": "speed (1)",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_speed_1",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -15218,6 +15269,27 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "f91d1b4c73c14d6da952768d2d6e8184",
+    "m_Id": -912627776,
+    "m_DisplayName": "speed",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_speed",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
 }
 
 {
