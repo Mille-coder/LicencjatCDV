@@ -9,6 +9,10 @@ public class Movement : MonoBehaviour
     [SerializeField] public int jumppower;
     [SerializeField] bool onLedge = false;
     [SerializeField] GameObject InteractionRange;
+    [SerializeField] PlayerSounds PlayerSounds;
+
+    
+
     private Ledge activeLedge;
     private bool pushing = false;
 
@@ -163,4 +167,11 @@ public class Movement : MonoBehaviour
 
         isPickingUp = false;
     }
+
+    private void PlayFootsteps()
+    {
+        PlayerSounds.PlayFootsteps();
+    }
+
+
 }

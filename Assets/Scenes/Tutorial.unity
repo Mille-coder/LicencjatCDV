@@ -1169,6 +1169,7 @@ GameObject:
   - component: {fileID: 16855029}
   - component: {fileID: 16855030}
   - component: {fileID: 16855031}
+  - component: {fileID: 16855032}
   m_Layer: 0
   m_Name: FallenTree
   m_TagString: Untagged
@@ -1229,6 +1230,37 @@ CapsuleCollider:
   m_Height: 7.74
   m_Direction: 1
   m_Center: {x: -0.01919258, y: -2.4900002, z: -0.14864981}
+--- !u!114 &16855032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16855028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -127102831
+      Data2: 1279303281
+      Data3: -155627848
+      Data4: -33495268
+    Path: event:/ChopingWood
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &17930645 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c3442d8851d464ef59e4a766762efd3a, type: 3}
@@ -10467,6 +10499,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 6.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 4.38
+      objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: m_Name
       value: VFX_SmokeFire
@@ -14093,6 +14137,7 @@ MonoBehaviour:
   jumppower: 8
   onLedge: 0
   InteractionRange: {fileID: 0}
+  PlayerSounds: {fileID: 2001796441}
   pickUpLockTime: 0.8
 --- !u!1001 &216749529
 PrefabInstance:
@@ -14755,6 +14800,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7811a70e848b5e4e83a656b19933ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupSound:
+    Guid:
+      Data1: 423459575
+      Data2: 1144073334
+      Data3: -236527715
+      Data4: -2061379469
+    Path: event:/PickUp
 --- !u!4 &229752387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1996964910442782137, guid: cbf328177a9014e01a3843c701080b51, type: 3}
@@ -17791,9 +17843,9 @@ GameObject:
   m_Component:
   - component: {fileID: 275051006}
   - component: {fileID: 275051005}
-  - component: {fileID: 275051004}
   - component: {fileID: 275051007}
   - component: {fileID: 275051008}
+  - component: {fileID: 275051009}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -17801,14 +17853,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &275051004
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275051003}
-  m_Enabled: 1
 --- !u!20 &275051005
 Camera:
   m_ObjectHideFlags: 0
@@ -17965,6 +18009,20 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &275051009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275051003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 216323454}
 --- !u!1 &276397114
 GameObject:
   m_ObjectHideFlags: 0
@@ -43531,6 +43589,7 @@ GameObject:
   - component: {fileID: 705583220}
   - component: {fileID: 705583219}
   - component: {fileID: 705583218}
+  - component: {fileID: 705583222}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -43645,6 +43704,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705583216}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &705583222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705583216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -433753833
+      Data2: 1243109532
+      Data3: 1378427059
+      Data4: 258874213
+    Path: event:/AI
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 2.7
+  OverrideMaxDistance: 3.55
 --- !u!4 &706780046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f7a372e15b04a76ba6cd118b340c6f, type: 3}
@@ -48973,6 +49063,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 783412195}
   doorcollider: {fileID: 783412197}
+  doorOpenEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!65 &783412197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53425,6 +53522,18 @@ PrefabInstance:
     - target: {fileID: 2140950094293576930, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -101.863
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: m_Name
@@ -58045,6 +58154,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: m_Name
       value: VFX_SmokeFire
@@ -62077,6 +62194,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pulling: 0
   me: {fileID: 975455051}
+  moveEvent:
+    Guid:
+      Data1: -1373620726
+      Data2: 1338849670
+      Data3: 1548490675
+      Data4: -1591253217
+    Path: event:/Pushing
 --- !u!65 &975455050
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73760,6 +73884,10 @@ PrefabInstance:
       propertyPath: movement
       value: 
       objectReference: {fileID: 216323464}
+    - target: {fileID: 659094405235471247, guid: ff7259b49369d60488bdae58d6548571, type: 3}
+      propertyPath: PlayerSounds
+      value: 
+      objectReference: {fileID: 2001796441}
     - target: {fileID: 857965498375796459, guid: ff7259b49369d60488bdae58d6548571, type: 3}
       propertyPath: m_Constraints
       value: 120
@@ -73850,7 +73978,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 204895599863751212, guid: ff7259b49369d60488bdae58d6548571, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3866389861652400610, guid: ff7259b49369d60488bdae58d6548571, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4204496810327071370, guid: ff7259b49369d60488bdae58d6548571, type: 3}
       insertIndex: -1
@@ -78818,11 +78947,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8f47a6faa2bb8f14bbea723ea12b9c11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2001796440}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f47a6faa2bb8f14bbea723ea12b9c11, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1669717028}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f47a6faa2bb8f14bbea723ea12b9c11, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1669717029}
   m_SourcePrefab: {fileID: 100100000, guid: 8f47a6faa2bb8f14bbea723ea12b9c11, type: 3}
 --- !u!4 &1205682302 stripped
 Transform:
@@ -82482,6 +82617,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1262665021}
   doorcollider: {fileID: 1262665023}
+  doorOpenEvent:
+    Guid:
+      Data1: -1435182432
+      Data2: 1094013852
+      Data3: -2108005757
+      Data4: 176276288
+    Path: event:/Doors
 --- !u!1001 &1262671580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111286,6 +111428,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1669717029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669717026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b48783c34d0b47dc952634ee89d46dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsEvent:
+    Guid:
+      Data1: 1674646393
+      Data2: 1143153017
+      Data3: -1472586598
+      Data4: 1080662875
+    Path: event:/Footsteps/Footsteps
 --- !u!1 &1670085733
 GameObject:
   m_ObjectHideFlags: 0
@@ -116532,6 +116693,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pulling: 0
   me: {fileID: 1749282863}
+  moveEvent:
+    Guid:
+      Data1: -1373620726
+      Data2: 1338849670
+      Data3: 1548490675
+      Data4: -1591253217
+    Path: event:/Pushing
 --- !u!65 &1749282865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -116567,6 +116735,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pulling: 0
   me: {fileID: 0}
+  moveEvent:
+    Guid:
+      Data1: -1373620726
+      Data2: 1338849670
+      Data3: 1548490675
+      Data4: -1591253217
+    Path: event:/Pushing
 --- !u!4 &1749924003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f7a372e15b04a76ba6cd118b340c6f, type: 3}
@@ -134564,6 +134739,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c3442d8851d464ef59e4a766762efd3a, type: 3}
   m_PrefabInstance: {fileID: 79722155}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2001796439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001796440}
+  - component: {fileID: 2001796441}
+  m_Layer: 0
+  m_Name: PlayerSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001796440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001796439}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1669717027}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2001796441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001796439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b48783c34d0b47dc952634ee89d46dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepsEvent:
+    Guid:
+      Data1: 1674646393
+      Data2: 1143153017
+      Data3: -1472586598
+      Data4: 1080662875
+    Path: event:/Footsteps/Footsteps
 --- !u!4 &2001926905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d1698584799145539341ad7ae8dbb6e, type: 3}
@@ -142607,6 +142833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseCanvas: {fileID: 979035408}
+  MainMenu: MainMenu
 --- !u!4 &2146766105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1996964910442782137, guid: cbf328177a9014e01a3843c701080b51, type: 3}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovementDisabler : MonoBehaviour
 {
     [SerializeField] Movement movement;
+   
 
     private void OnEnable()
     {

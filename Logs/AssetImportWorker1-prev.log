@@ -1,0 +1,2544 @@
+Unity Editor version:    2022.3.62f2 (7670c08855a9)
+Branch:                  2022.3/respin/2022.3.62f2-4af31df585-v2
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.3.1 (a) (Build 25D771280a)
+Darwin version:          25.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/magdalenaplawinska/LicencjatCDV
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50541
+Successfully changed project path to: /Users/magdalenaplawinska/LicencjatCDV
+/Users/magdalenaplawinska/LicencjatCDV
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8424780032]  Target information:
+
+Player connection [8424780032]  * "[IP] 192.168.0.32 [Port] 0 [Flags] 2 [Guid] 3299236285 [EditorId] 3299236285 [Version] 1048832 [Id] OSXEditor(0,MacMiniMagda.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8424780032] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8424780032] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+Refreshing native plugins compatible for Editor in 30.38 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.62f2 (7670c08855a9)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/magdalenaplawinska/LicencjatCDV/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M4 (high power)
+Metal devices available: 1
+0: Apple M4 (high power)
+Using device Apple M4 (high power)
+Initializing Metal device caps: Apple M4
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001682 seconds.
+- Loaded All Assemblies, in  0.172 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.108 seconds
+Domain Reload Profiling: 280ms
+	BeginReloadAssembly (64ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (16ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (65ms)
+		LoadAssemblies (64ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (64ms)
+			TypeCache.Refresh (63ms)
+				TypeCache.ScanAssembly (57ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (109ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (88ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (60ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.367 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.336 seconds
+Domain Reload Profiling: 703ms
+	BeginReloadAssembly (56ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (9ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (276ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (114ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (87ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (336ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (262ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (197ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.62f2/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.45 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5827 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 76 unused Assets / (3.7 MB). Loaded Objects now: 6293.
+Memory consumption went from 340.7 MB to 337.0 MB.
+Total: 2.733875 ms (FindLiveObjects: 0.164833 ms CreateObjectMapping: 0.056750 ms MarkObjects: 1.899333 ms  DeleteObjects: 0.612459 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x177f43000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.249 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.821 seconds
+Domain Reload Profiling: 1071ms
+	BeginReloadAssembly (59ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (163ms)
+		LoadAssemblies (157ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (822ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (211ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 4.03 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6312.
+Memory consumption went from 299.1 MB to 295.5 MB.
+Total: 2.300875 ms (FindLiveObjects: 0.157209 ms CreateObjectMapping: 0.054166 ms MarkObjects: 1.715084 ms  DeleteObjects: 0.373875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.182 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.808 seconds
+Domain Reload Profiling: 990ms
+	BeginReloadAssembly (56ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (96ms)
+		LoadAssemblies (109ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (808ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (228ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.84 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6331.
+Memory consumption went from 301.7 MB to 298.0 MB.
+Total: 2.382833 ms (FindLiveObjects: 0.163333 ms CreateObjectMapping: 0.054792 ms MarkObjects: 1.786208 ms  DeleteObjects: 0.378167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.185 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.805 seconds
+Domain Reload Profiling: 989ms
+	BeginReloadAssembly (57ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (99ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (805ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (226ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6350.
+Memory consumption went from 304.1 MB to 300.4 MB.
+Total: 2.930875 ms (FindLiveObjects: 0.214292 ms CreateObjectMapping: 0.058208 ms MarkObjects: 2.127958 ms  DeleteObjects: 0.529792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.233 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.789 seconds
+Domain Reload Profiling: 1022ms
+	BeginReloadAssembly (62ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (145ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (789ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (197ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (146ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.38 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6369.
+Memory consumption went from 306.6 MB to 302.9 MB.
+Total: 2.275292 ms (FindLiveObjects: 0.163292 ms CreateObjectMapping: 0.051208 ms MarkObjects: 1.645792 ms  DeleteObjects: 0.414500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.182 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.877 seconds
+Domain Reload Profiling: 1059ms
+	BeginReloadAssembly (56ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (97ms)
+		LoadAssemblies (109ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (877ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (180ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.80 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6388.
+Memory consumption went from 309.0 MB to 305.3 MB.
+Total: 3.245625 ms (FindLiveObjects: 0.218417 ms CreateObjectMapping: 0.052125 ms MarkObjects: 2.416416 ms  DeleteObjects: 0.558041 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.189 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.505 seconds
+Domain Reload Profiling: 695ms
+	BeginReloadAssembly (70ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (90ms)
+		LoadAssemblies (108ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (505ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (280ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (207ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.91 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.7 MB). Loaded Objects now: 6407.
+Memory consumption went from 311.5 MB to 307.8 MB.
+Total: 2.987208 ms (FindLiveObjects: 0.196875 ms CreateObjectMapping: 0.132000 ms MarkObjects: 2.149792 ms  DeleteObjects: 0.507791 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.281 seconds
+Native extension for OSXStandalone target not found
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.786 seconds
+Domain Reload Profiling: 1068ms
+	BeginReloadAssembly (68ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (185ms)
+		LoadAssemblies (137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (73ms)
+			TypeCache.Refresh (58ms)
+				TypeCache.ScanAssembly (50ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (786ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.83 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5638 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6503.
+Memory consumption went from 315.0 MB to 311.3 MB.
+Total: 2.414250 ms (FindLiveObjects: 0.167083 ms CreateObjectMapping: 0.049708 ms MarkObjects: 1.837750 ms  DeleteObjects: 0.359166 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5cbb01a5f49a5a583c44f5e3ed8a7ccb -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.240 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.862 seconds
+Domain Reload Profiling: 1102ms
+	BeginReloadAssembly (69ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (142ms)
+		LoadAssemblies (144ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (862ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (204ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (151ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.53 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6523.
+Memory consumption went from 320.2 MB to 316.5 MB.
+Total: 2.441375 ms (FindLiveObjects: 0.159125 ms CreateObjectMapping: 0.106417 ms MarkObjects: 1.763458 ms  DeleteObjects: 0.412000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 4c20ba4c570fe46e44287ccb78dc4cee -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.245 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.874 seconds
+Domain Reload Profiling: 1119ms
+	BeginReloadAssembly (70ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (145ms)
+		LoadAssemblies (149ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (875ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (217ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (28ms)
+			ProcessInitializeOnLoadAttributes (160ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.36 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5638 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (3.7 MB). Loaded Objects now: 6541.
+Memory consumption went from 322.5 MB to 318.8 MB.
+Total: 2.331041 ms (FindLiveObjects: 0.171709 ms CreateObjectMapping: 0.063333 ms MarkObjects: 1.694750 ms  DeleteObjects: 0.400958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 5cbb01a5f49a5a583c44f5e3ed8a7ccb -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.201 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.813 seconds
+Domain Reload Profiling: 1014ms
+	BeginReloadAssembly (53ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (1ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (119ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (814ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (225ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (166ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.25 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6561.
+Memory consumption went from 325.0 MB to 321.3 MB.
+Total: 2.356666 ms (FindLiveObjects: 0.168958 ms CreateObjectMapping: 0.048875 ms MarkObjects: 1.621459 ms  DeleteObjects: 0.516959 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: abe664fe75a916db456d7e0b0bd70005 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.281 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.901 seconds
+Domain Reload Profiling: 1182ms
+	BeginReloadAssembly (77ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (16ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (166ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (35ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (901ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (206ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (152ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6580.
+Memory consumption went from 327.5 MB to 323.8 MB.
+Total: 2.312459 ms (FindLiveObjects: 0.160959 ms CreateObjectMapping: 0.049500 ms MarkObjects: 1.690750 ms  DeleteObjects: 0.410667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: abe664fe75a916db456d7e0b0bd70005 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.221 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.059 seconds
+Domain Reload Profiling: 1280ms
+	BeginReloadAssembly (56ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (135ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1059ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (254ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (16ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.28 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6599.
+Memory consumption went from 329.9 MB to 326.3 MB.
+Total: 2.413041 ms (FindLiveObjects: 0.166583 ms CreateObjectMapping: 0.098042 ms MarkObjects: 1.718041 ms  DeleteObjects: 0.430000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.225 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.857 seconds
+Domain Reload Profiling: 1082ms
+	BeginReloadAssembly (61ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (139ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (858ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (204ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (152ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.29 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6618.
+Memory consumption went from 332.4 MB to 328.7 MB.
+Total: 2.439791 ms (FindLiveObjects: 0.186209 ms CreateObjectMapping: 0.056250 ms MarkObjects: 1.769166 ms  DeleteObjects: 0.427875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: abe664fe75a916db456d7e0b0bd70005 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.222 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.968 seconds
+Domain Reload Profiling: 1191ms
+	BeginReloadAssembly (64ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (132ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (969ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (219ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.20 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6637.
+Memory consumption went from 334.9 MB to 331.2 MB.
+Total: 2.501250 ms (FindLiveObjects: 0.169083 ms CreateObjectMapping: 0.049458 ms MarkObjects: 1.837625 ms  DeleteObjects: 0.444750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.445 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.867 seconds
+Domain Reload Profiling: 1312ms
+	BeginReloadAssembly (89ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (320ms)
+		LoadAssemblies (274ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (87ms)
+			TypeCache.Refresh (61ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (867ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 4.09 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6656.
+Memory consumption went from 336.6 MB to 332.9 MB.
+Total: 2.442666 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.118291 ms MarkObjects: 1.710875 ms  DeleteObjects: 0.432917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.220 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.935 seconds
+Domain Reload Profiling: 1155ms
+	BeginReloadAssembly (60ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (10ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (132ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (935ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (217ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (27ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 4.17 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6675.
+Memory consumption went from 339.1 MB to 335.4 MB.
+Total: 2.644583 ms (FindLiveObjects: 0.171292 ms CreateObjectMapping: 0.079583 ms MarkObjects: 1.968792 ms  DeleteObjects: 0.424541 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.190 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.435 seconds
+Domain Reload Profiling: 626ms
+	BeginReloadAssembly (62ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (100ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (435ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (223ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.91 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6694.
+Memory consumption went from 341.5 MB to 337.9 MB.
+Total: 2.535417 ms (FindLiveObjects: 0.176667 ms CreateObjectMapping: 0.053042 ms MarkObjects: 1.867417 ms  DeleteObjects: 0.437833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.191 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.882 seconds
+Domain Reload Profiling: 1074ms
+	BeginReloadAssembly (56ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (1ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (14ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (108ms)
+		LoadAssemblies (118ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (882ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (284ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (197ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6713.
+Memory consumption went from 344.0 MB to 340.3 MB.
+Total: 3.749750 ms (FindLiveObjects: 0.253458 ms CreateObjectMapping: 0.056708 ms MarkObjects: 2.856583 ms  DeleteObjects: 0.582625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.244 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.960 seconds
+Domain Reload Profiling: 1204ms
+	BeginReloadAssembly (59ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (9ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (153ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (960ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (29ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 4.16 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6732.
+Memory consumption went from 346.4 MB to 342.7 MB.
+Total: 2.670500 ms (FindLiveObjects: 0.183625 ms CreateObjectMapping: 0.055417 ms MarkObjects: 1.905250 ms  DeleteObjects: 0.525750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.202 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.457 seconds
+Domain Reload Profiling: 659ms
+	BeginReloadAssembly (61ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (108ms)
+		LoadAssemblies (120ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (457ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (242ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (178ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 4.06 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6751.
+Memory consumption went from 348.9 MB to 345.2 MB.
+Total: 2.345125 ms (FindLiveObjects: 0.175375 ms CreateObjectMapping: 0.053458 ms MarkObjects: 1.654083 ms  DeleteObjects: 0.461750 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 31368.052644 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Call Elevator Button Lift Big Large Mechanical Noise 1.wav
+  artifactKey: Guid(ccb8c34bde4eb41389aa1c83a3ab0e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Call Elevator Button Lift Big Large Mechanical Noise 1.wav using Guid(ccb8c34bde4eb41389aa1c83a3ab0e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'cc4b7bdd8b51c6afbdb3bf7ad30a90bf') in 0.312238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Unlock 1.wav
+  artifactKey: Guid(c70d84ab81270450ca59ba4554ce5a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Unlock 1.wav using Guid(c70d84ab81270450ca59ba4554ce5a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '8a6c213495043f9bd8b7db8373cd7e3f') in 0.008236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Close Metal Door Locker Cabinet Box 1.wav
+  artifactKey: Guid(9ee2bbf3911a4448bbcbb25e6e57c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Close Metal Door Locker Cabinet Box 1.wav using Guid(9ee2bbf3911a4448bbcbb25e6e57c892) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '22bd447c1e830e1fda658e93a3f7520d') in 0.023110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Closing Shutter Sliding Door 1.wav
+  artifactKey: Guid(62a63664aea9043ddafb1339ed6e476d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Closing Shutter Sliding Door 1.wav using Guid(62a63664aea9043ddafb1339ed6e476d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '69610506672d6145f0fd04dd4ba6989b') in 0.018720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Open and Close Door 2.wav
+  artifactKey: Guid(ba47ededc29024b38b09ca7d6d7c322a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Open and Close Door 2.wav using Guid(ba47ededc29024b38b09ca7d6d7c322a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'd4f0077fdd90e648ee1db374f2d524bf') in 0.011029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Swinging Metal Door Clang Shut 1.wav
+  artifactKey: Guid(d0e9bbc92e8ca42ec81b4a5afc5ab590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Swinging Metal Door Clang Shut 1.wav using Guid(d0e9bbc92e8ca42ec81b4a5afc5ab590) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '509c7d9497f39bb2a0276b0be1324be6') in 0.018962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Window Sliding Open Furniture Moving 3.wav
+  artifactKey: Guid(a060384cf2636489b90324a5df9d539f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Window Sliding Open Furniture Moving 3.wav using Guid(a060384cf2636489b90324a5df9d539f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '28b183f284f19d5da7f1447039574391') in 0.011999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000622 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Open Close Metal Door Locker Cabinet Box 3.wav
+  artifactKey: Guid(a2730fd02f17e4ea99168876aa5c6305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Open Close Metal Door Locker Cabinet Box 3.wav using Guid(a2730fd02f17e4ea99168876aa5c6305) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'babb71835fe1a5aaa1a900c0026ff3eb') in 0.034374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Locked Door 2.wav
+  artifactKey: Guid(cfb34fff51b0847e599e6831ba854864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Locked Door 2.wav using Guid(cfb34fff51b0847e599e6831ba854864) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '1830cf27b59456996a95ec2d084d7d68') in 0.012037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Metal Clasp Open Container Door Box 1.wav
+  artifactKey: Guid(2f600d94602564a99ad4dad55a4a317d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Metal Clasp Open Container Door Box 1.wav using Guid(2f600d94602564a99ad4dad55a4a317d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'ceb6bec86d46a197b8574e18cf6f1111') in 0.015797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Close Door 6.wav
+  artifactKey: Guid(0210c1127dd754ced9c723f73428cc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Close Door 6.wav using Guid(0210c1127dd754ced9c723f73428cc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '385a86a95a3e21c23c82be7587d53bdd') in 0.020820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Locked Door Turn Doorknob 3.wav
+  artifactKey: Guid(ba0dd6d8b717e403ca0fa3bdebe97dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Locked Door Turn Doorknob 3.wav using Guid(ba0dd6d8b717e403ca0fa3bdebe97dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: 'a60304ef1b0ec67732e5c0ef75d2a1cc') in 0.030420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Open Door 7.wav
+  artifactKey: Guid(a200ceb3276a64815ba89e6db4488604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Open Door 7.wav using Guid(a200ceb3276a64815ba89e6db4488604) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '826172efd37bbace9f972be4a5b4ee5b') in 0.008702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Close Door 23.wav
+  artifactKey: Guid(898f03a7c6c254aa2bffc1050c10ea08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sound/Door, Cabinet and Locker Sound Pack (Free)/FREE VERSION/Close Door 23.wav using Guid(898f03a7c6c254aa2bffc1050c10ea08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 10 workers.
+ -> (artifact id: '69d0409fe5707f3cde2f8237e3623d55') in 0.006105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16f17b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.244 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.990 seconds
+Domain Reload Profiling: 1235ms
+	BeginReloadAssembly (71ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (133ms)
+		LoadAssemblies (147ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (990ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (319ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (204ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Builtin_TerrainVisualization' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.88 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5639 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (3.7 MB). Loaded Objects now: 6780.
+Memory consumption went from 353.1 MB to 349.4 MB.
+Total: 2.593417 ms (FindLiveObjects: 0.211083 ms CreateObjectMapping: 0.059042 ms MarkObjects: 1.861958 ms  DeleteObjects: 0.460833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/SingleClientEvent.cs: 7ebd7355fda2f6bce485c08f72845cfa -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.TrinityEditor: cadd03d1a7469d6254427cf964c96447 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcProcedureParameters.cs: a1c0a3a73bab8ed3ada401c79f2d3a21 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/MapDescriptions.cs: dcd4ad2f82c269008ba8ebdac8729125 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CommandTarget.cs: 1607969702e055d433bdcd8d50744d0d -> 
+  custom:scripting/monoscript/fileName/RoomBrowserRow.cs: 0263fbf2f840a2609629f8a1ac39c37e -> 
+  custom:CustomObjectIndexerAttribute: 3ead1caaecf1c488f20bcfeb224b6af5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyRunForLowestIndex.cs: 3897ff470779d25a3ec0851b719dbe3a -> 
+  custom:scripting/monoscript/fileName/CommandRotate.cs: 61842fcb42c85bfd3b1fbdee29de2669 -> 
+  custom:scripting/monoscript/fileName/ExampleRpcSerializable.cs: f4a0c1bd4f8dcbc62e0e4df7dd64be03 -> 
+  custom:scripting/monoscript/fileName/CommandCreateRoom.cs: 452dce5723c1a71f4436f23370c85e7b -> 
+  custom:scripting/monoscript/fileName/MapInfoDrawer.cs: 877c3dfe10d41fcfb1c07cd0544f93ce -> 
+  custom:scripting/monoscript/fileName/CommandTp.cs: 9f051748461ff63322509c81ed0a98f4 -> 
+  custom:scripting/monoscript/fileName/CustomRoomInfo.cs: f18724d40544d4bfd903f99fa9f029d8 -> 
+  custom:scripting/monoscript/fileName/ExampleOnlyForLocalAvatar.cs: a57f65ccbfaad0068912535bad928291 -> 
+  custom:scripting/monoscript/fileName/StatusPopup.cs: d02f2aaf41ebae1192abcf26b104df48 -> 
+  custom:scripting/monoscript/fileName/EnsureEventSystem.cs: fafe5034c0026e6a92efa6a016771534 -> 
+  custom:scripting/monoscript/fileName/PlayerSounds.cs: 0d5c8ccd050dccd7d8504b0142fe06b7 -> 
+  custom:scripting/monoscript/fileName/RoomBrowserSortButton.cs: 4e7817bf86329267a4907781c3589ac7 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PasswordPopup.cs: 15bd0f1c9278d85bc8450e2488a0c07a -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/PlayerSound.cs: 5fbeb8302369b148194cdaf035549e34 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CommandPrint.cs: 725bf4b2ecdf7cf089951a5d1aca01f8 -> 
+  custom:scripting/monoscript/fileName/CreateRoomMenu.cs: cf73dac2e453083dc1bfca39006ee7b2 -> 
+  custom:scripting/monoscript/fileName/CommandMe.cs: ebc4245b5c340c69206f8e332e00e9e8 -> 
+  custom:scripting/monoscript/fileName/CommandLeaveRoom.cs: f884145c4b2e40b0870446eee76d1fce -> 
+  custom:scripting/monoscript/fileName/CommandRoom.cs: 62ec0bb3fb7c4e9ab842815ff9d483ac -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowserEditor.cs: 1ff4f286c8272ed53477fb34307da543 -> 
+  custom:scripting/precompiled-assembly-types:Alteruna.Trinity: 363ca4120871b017c12f47d9f3cb93fc -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/RoomBrowser.cs: 0dc569d01367f01d2987a75076205ee3 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CommandUid.cs: fb68427bf59668efbec3ee511a571de2 -> 
+  custom:scripting/monoscript/fileName/CommandSync.cs: 3608745329e4e2ba889fcd797d35fe5f -> 
+  custom:scripting/monoscript/fileName/ExampleSynchronizable.cs: b9767b511ff500f13e58477153a3e072 -> 
+  custom:scripting/monoscript/fileName/CommandJoinRoom.cs: 73e751760570151d66905a2840c8b562 -> 
+  custom:scripting/monoscript/fileName/ExampleAttributeRpc.cs: 7f722a637e0dda5c5d93c2950c3c26a3 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: d9eab57c7710bcf00152a15191d5f5dc -> 
+  custom:scripting/monoscript/fileName/CommandScale.cs: 1b7e84502815dca2acf0eafb643b3313 -> 
+  custom:scripting/monoscript/fileName/ITextChatCommand.cs: e5d5b5fbbfa28a93d753e21c5270244e -> 
+  custom:scripting/monoscript/fileName/TextChatSynchronizable.cs: bad9839a07c2384c313289cd8eb47ebd -> 
+  custom:scripting/monoscript/fileName/BaseRoomBrowser.cs: a6f22eb18ee1e50732ac642ecce5191f -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: d0f86baf7b914e2b5862b700daa816f4 -> eb1fb5f235c290dcd5a553d1629beee3
+  custom:scripting/monoscript/fileName/CommandLoadScene.cs: f88875058067fd84195254d01c01bdd9 -> 
+  custom:scripting/monoscript/fileName/RoomMenu.cs: 2e10133974671fba816cfb78d5db6d3b -> 
+  custom:scripting/monoscript/fileName/CommandMove.cs: df7ef5461e8ac8ce593db2a19d311360 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting

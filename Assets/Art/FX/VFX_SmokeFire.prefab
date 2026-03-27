@@ -19329,6 +19329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2140950094293576930}
+  - component: {fileID: 7184716577358661873}
   m_Layer: 0
   m_Name: VFX_SmokeFire
   m_TagString: Untagged
@@ -19355,3 +19356,34 @@ Transform:
   - {fileID: 4857733443294752752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7184716577358661873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7967666581956070529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -967990564
+      Data2: 1224727902
+      Data3: 774714259
+      Data4: -2035486319
+    Path: event:/Fire
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 3.76
+  OverrideMaxDistance: 6.3

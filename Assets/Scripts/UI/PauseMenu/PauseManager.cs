@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseCanvas;
+    public string MainMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class PauseManager : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(MainMenu);
     }
 }
