@@ -66,11 +66,9 @@
 			<destination>{ae07d94c-e9a1-4d6f-9b9d-d3960b251915}</destination>
 			<destination>{af2030b2-bf7d-49e3-9f28-0fc26a78eaa5}</destination>
 			<destination>{c7ab2b67-949a-49bd-a593-5bf7db28a6a2}</destination>
-			<destination>{9f8da65c-35cf-4d64-8568-434f58327da8}</destination>
 			<destination>{4df22e8d-aefa-4867-b5ea-1619e0e141bc}</destination>
 			<destination>{f1cbb49c-75a2-45e1-9c21-d031ad04d5cd}</destination>
 			<destination>{6e342769-21fd-43c7-bad0-68fbbed162f5}</destination>
-			<destination>{187bd559-fdb7-421d-9656-59f9e60c6583}</destination>
 			<destination>{aeef5756-2d0d-42df-affd-14172c4f74c8}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
@@ -85,11 +83,9 @@
 			<destination>{ae07d94c-e9a1-4d6f-9b9d-d3960b251915}</destination>
 			<destination>{af2030b2-bf7d-49e3-9f28-0fc26a78eaa5}</destination>
 			<destination>{c7ab2b67-949a-49bd-a593-5bf7db28a6a2}</destination>
-			<destination>{9f8da65c-35cf-4d64-8568-434f58327da8}</destination>
 			<destination>{4df22e8d-aefa-4867-b5ea-1619e0e141bc}</destination>
 			<destination>{f1cbb49c-75a2-45e1-9c21-d031ad04d5cd}</destination>
 			<destination>{6e342769-21fd-43c7-bad0-68fbbed162f5}</destination>
-			<destination>{187bd559-fdb7-421d-9656-59f9e60c6583}</destination>
 			<destination>{aeef5756-2d0d-42df-affd-14172c4f74c8}</destination>
 		</relationship>
 		<relationship name="markers">
@@ -221,20 +217,6 @@
 			<destination>{0ce9c973-8c44-4d73-9de5-8bb94098442f}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{9f8da65c-35cf-4d64-8568-434f58327da8}">
-		<property name="start">
-			<value>22</value>
-		</property>
-		<property name="length">
-			<value>1.9224166666666667</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{385f859c-42aa-4fec-a4f5-48e3a85db706}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{f14953dc-662a-486e-b51d-2bb2d80563a6}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{4df22e8d-aefa-4867-b5ea-1619e0e141bc}">
 		<property name="start">
 			<value>25</value>
@@ -280,26 +262,6 @@
 			<destination>{ad9103f2-bed3-42e2-8c65-59a15e15fcc4}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{187bd559-fdb7-421d-9656-59f9e60c6583}">
-		<property name="start">
-			<value>85</value>
-		</property>
-		<property name="length">
-			<value>1.9224166666666667</value>
-		</property>
-		<property name="volume">
-			<value>-10</value>
-		</property>
-		<property name="pitch">
-			<value>-6</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{a3ab35f0-360e-4abc-8a6e-0c1d71c29e80}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{f14953dc-662a-486e-b51d-2bb2d80563a6}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{aeef5756-2d0d-42df-affd-14172c4f74c8}">
 		<property name="start">
 			<value>98</value>
@@ -315,6 +277,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ef691b02-2e3f-4141-beae-3cb0c057cf9b}">
+		<property name="volume">
+			<value>-15</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -429,28 +394,12 @@
 			<value>20.5</value>
 		</property>
 	</object>
-	<object class="RandomizerModulator" id="{385f859c-42aa-4fec-a4f5-48e3a85db706}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>22.5</value>
-		</property>
-	</object>
 	<object class="RandomizerModulator" id="{0345d870-8d46-449b-9e8d-a126aca12d65}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>
 		<property name="amount">
 			<value>25.5</value>
-		</property>
-	</object>
-	<object class="RandomizerModulator" id="{a3ab35f0-360e-4abc-8a6e-0c1d71c29e80}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>11.5</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{a754ab22-20e4-4c19-89de-02d3b058a98b}">
