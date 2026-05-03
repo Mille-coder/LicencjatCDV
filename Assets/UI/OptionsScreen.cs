@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
+using FMOD.Studio;
 
 public class OptionsScreen : MonoBehaviour
 {
@@ -12,73 +14,94 @@ public class OptionsScreen : MonoBehaviour
     public List<ResItem> resolutions = new List<ResItem>();
     public TMP_Text resolutionLable;
 
+    [Header("Audio")]
+    public Slider masterVolumeSlider;
+
     private int selectedRes;
+    private Bus masterBus;
+
     void Start()
     {
         fullScreenTog.isOn = Screen.fullScreen;
 
-        if(QualitySettings.vSyncCount == 0)
-        {
+        if (QualitySettings.vSyncCount == 0)
             vSyncTog.isOn = false;
-        }
         else
-        {
             vSyncTog.isOn = true;
-        }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        masterBus = RuntimeManager.GetBus("bus:/");
+
+        float currentVolume;
+        masterBus.getVolume(out currentVolume);
+
+        if (masterVolumeSlider != null)
+        {
+            masterVolumeSlider.value = currentVolume;
+            masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
+        }
+
+        UpdateResLable();
     }
 
     public void ResLeft()
     {
         selectedRes--;
+
         if (selectedRes < 0)
-        {
-            selectedRes = resolutions.Count-1;
-        }
+            selectedRes = resolutions.Count - 1;
+
         UpdateResLable();
     }
 
     public void ResRight()
     {
         selectedRes++;
-        if (selectedRes > resolutions.Count-1)
-        {
+
+        if (selectedRes > resolutions.Count - 1)
             selectedRes = 0;
-        }
+
         UpdateResLable();
     }
 
     public void UpdateResLable()
     {
-        resolutionLable.text = resolutions[selectedRes].horizontal.ToString() + " X " + resolutions[selectedRes].vertical.ToString();
+        resolutionLable.text =
+            resolutions[selectedRes].horizontal.ToString() +
+            " X " +
+            resolutions[selectedRes].vertical.ToString();
     }
 
     public void ApplyChanges()
     {
-        //Screen.fullScreen = fullScreenTog.isOn;
-
-        if(vSyncTog.isOn)
-        {
+        if (vSyncTog.isOn)
             QualitySettings.vSyncCount = 1;
-        }
         else
-        {
             QualitySettings.vSyncCount = 0;
-        }
 
-        Screen.SetResolution(resolutions[selectedRes].horizontal, resolutions[selectedRes].vertical, fullScreenTog.isOn);
+        Screen.SetResolution(
+            resolutions[selectedRes].horizontal,
+            resolutions[selectedRes].vertical,
+            fullScreenTog.isOn
+        );
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        masterBus.setVolume(volume);
     }
 
     public void Close()
     {
         OptionsMenu.SetActive(false);
     }
+
+    private void OnDestroy()
+    {
+        if (masterVolumeSlider != null)
+            masterVolumeSlider.onValueChanged.RemoveListener(SetMasterVolume);
+    }
 }
+
 [System.Serializable]
 public class ResItem
 {
