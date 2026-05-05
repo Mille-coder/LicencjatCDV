@@ -10,8 +10,10 @@ public class CameraLimitChanger : MonoBehaviour
     [SerializeField] Collider2D newbounds;
 
     void OnTriggerEnter(Collider other)
-    {
-        confiner.m_BoundingShape2D = newbounds;
+    { if(other.gameObject.tag == "Player")
+        {
+            confiner.m_BoundingShape2D = newbounds;
+        }
     }
 
 }
