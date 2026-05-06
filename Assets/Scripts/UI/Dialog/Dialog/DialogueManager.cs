@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueLine[] newLines)
     {
+        GlobalEvents.RaiseOnMovementOff();
         lines = newLines;
         index = 0;
 
@@ -83,6 +84,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         IsDialogueOpen = false;
+        GlobalEvents.RaiseOnMovementOn();
     }
 }
 

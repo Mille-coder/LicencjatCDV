@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -8,32 +9,29 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Manager")]
     public DialogueManager dialogueManager;
 
-    private bool playerInRange;
-
-    void Update()
-    {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
-        {
-            if (!dialogueManager.IsDialogueOpen)
-            {
-                dialogueManager.StartDialogue(dialogueLines);
-            }
-        }
-    }
+    private bool alreadyPlayed = false;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = true;
-        }
+        if (!other.CompareTag("Player")) return;
+        if (alreadyPlayed) return;
+
+        alreadyPlayed = true;
+
+        dialogueManager.StartDialogue(dialogueLines);
+
+        StartCoroutine(DisableAfterDialogue());
     }
 
-    void OnTriggerExit(Collider other)
+    IEnumerator DisableAfterDialogue()
     {
-        if (other.CompareTag("Player"))
+        // czekamy a¿ dialog siê skoñczy
+        while (dialogueManager.IsDialogueOpen)
         {
-            playerInRange = false;
+            yield return null;
         }
+
+        // wy³¹cza ca³y obiekt DialogCollider
+        gameObject.SetActive(false);
     }
 }
