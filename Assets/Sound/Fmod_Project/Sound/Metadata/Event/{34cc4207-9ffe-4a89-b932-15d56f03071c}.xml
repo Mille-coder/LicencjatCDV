@@ -5,7 +5,7 @@
 			<value>Ambient</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5d933869-4aac-40ae-8d10-aa90c64d3c27}</destination>
@@ -301,6 +301,7 @@
 	<object class="MixerBusEffectChain" id="{76e1cc4b-c43a-4874-9b9b-1d70c05782fa}">
 		<relationship name="effects">
 			<destination>{fb1cebdb-3380-44e3-ac12-75e1a97deaf9}</destination>
+			<destination>{73c87846-6637-4c22-9400-7c36b45051a0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8a830614-1e89-42a1-a3e4-6e33397a0f15}" />
@@ -404,10 +405,19 @@
 	<object class="MixerBusEffectChain" id="{79e7525c-15f6-4477-90e9-6e7b813249e5}">
 		<relationship name="effects">
 			<destination>{f912246b-075e-423b-95f9-ba35b721d5c8}</destination>
+			<destination>{c4401da3-3832-41d2-beeb-c842ef3e13b2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d9fb5780-276a-4766-a811-6ec8904304ee}" />
 	<object class="MixerBusFader" id="{fb1cebdb-3380-44e3-ac12-75e1a97deaf9}" />
+	<object class="SpatialiserEffect" id="{73c87846-6637-4c22-9400-7c36b45051a0}">
+		<property name="maximumDistance">
+			<value>950</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{bae08537-ef6d-4b1e-ad5d-ede8fa2b3285}">
 		<property name="position">
 			<value>3</value>
@@ -523,4 +533,12 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{f912246b-075e-423b-95f9-ba35b721d5c8}" />
+	<object class="SpatialiserEffect" id="{c4401da3-3832-41d2-beeb-c842ef3e13b2}">
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>
