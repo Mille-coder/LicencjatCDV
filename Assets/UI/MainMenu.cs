@@ -1,15 +1,21 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public string newGameScene;
+    public GameObject loadingScreen;
     public GameObject OptionsMenu;
+    public GameObject mainMenu;
+
+    [SerializeField] private ASyncLoader asyncLoader;
+    [SerializeField] private string tutorialScene = "Tutorial";
 
     public void NewGame()
     {
-        SceneManager.LoadScene(newGameScene);
+        mainMenu.SetActive(false);
+        loadingScreen.SetActive(true);
+
+        asyncLoader.StartGame(tutorialScene);
+
         Debug.Log("New Game Clicked");
     }
 
