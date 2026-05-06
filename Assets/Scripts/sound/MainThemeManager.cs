@@ -6,8 +6,7 @@ public class MainThemeManager : MonoBehaviour
 {
     public static MainThemeManager instance;
 
-    [EventRef]
-    public string musicEvent;
+    public EventReference musicEvent;
 
     private EventInstance musicInstance;
 
@@ -28,7 +27,6 @@ public class MainThemeManager : MonoBehaviour
 
     void OnDestroy()
     {
-        // Sprawdzenie czy instancja istnieje zanim ją zatrzymamy
         if (musicInstance.isValid())
         {
             musicInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
