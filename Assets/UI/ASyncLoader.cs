@@ -52,6 +52,7 @@ public class ASyncLoader : MonoBehaviour
         if (videoImage != null && renderTexture != null)
         {
             videoImage.texture = renderTexture;
+            
         }
 
         // Start filmu
