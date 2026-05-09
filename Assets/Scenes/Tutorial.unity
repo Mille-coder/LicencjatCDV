@@ -6205,6 +6205,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c8bec26b3bc4d88b3c87d8f0e27814, type: 3}
+--- !u!1 &88012754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
+  m_PrefabInstance: {fileID: 881534944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &88012757
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88012754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3febe2298efdd2242be0cc179fc9fb22, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &88085383
 GameObject:
   m_ObjectHideFlags: 0
@@ -15374,7 +15400,6 @@ MonoBehaviour:
   onLedge: 0
   InteractionRange: {fileID: 0}
   PlayerSounds: {fileID: 0}
-  pickUpLockTime: 0.8
 --- !u!114 &216323473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64641,15 +64666,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64707,10 +64732,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5866666021909216657, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3febe2298efdd2242be0cc179fc9fb22, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 635547659545568360, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 88012757}
   m_SourcePrefab: {fileID: 100100000, guid: 348dd136308769f4aacf0177f0b8d353, type: 3}
 --- !u!4 &881534945 stripped
 Transform:

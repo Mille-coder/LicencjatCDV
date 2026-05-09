@@ -11,25 +11,22 @@ public class Movement : MonoBehaviour
     [SerializeField] GameObject InteractionRange;
     [SerializeField] PlayerSounds PlayerSounds;
 
-    
-
     private Ledge activeLedge;
     private bool pushing = false;
 
     private bool grounded = true;
-    private bool hanging = false;
     private Rigidbody playerRB;
-    
+
     int slow = 1;
 
     private Animator animator;
-    [SerializeField] private float pickUpLockTime = 0.8f;
-    private bool isPickingUp = false;
 
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
+
+        Debug.Log("Animator found on: " + animator.gameObject.name);
     }
 
     private void OnEnable()
@@ -46,12 +43,6 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (isPickingUp)
-        {
-            UpdateAnimations();
-            return;
-        }
-
         if (onLedge == true)
         {
             if (Input.GetKeyDown(KeyCode.W))
@@ -66,12 +57,22 @@ public class Movement : MonoBehaviour
         {
             if (grounded == true)
             {
-                playerRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * movespeed / slow, playerRB.velocity.y);
+                playerRB.velocity = new Vector3(
+                    Input.GetAxisRaw("Horizontal") * movespeed / slow,
+                    playerRB.velocity.y,
+                    playerRB.velocity.z
+                );
 
                 if (Input.GetButtonDown("Jump") && pushing == false)
                 {
-                    playerRB.velocity = new Vector2(playerRB.velocity.x, jumppower);
+                    playerRB.velocity = new Vector3(
+                        playerRB.velocity.x,
+                        jumppower,
+                        playerRB.velocity.z
+                    );
+
                     grounded = false;
+
                     if (animator != null)
                         animator.SetTrigger("Jump");
                 }
@@ -79,21 +80,27 @@ public class Movement : MonoBehaviour
 
             if (Input.GetButtonUp("Jump"))
             {
-                playerRB.velocity = new Vector2(playerRB.velocity.x, playerRB.velocity.y * 0.5f);
+                playerRB.velocity = new Vector3(
+                    playerRB.velocity.x,
+                    playerRB.velocity.y * 0.5f,
+                    playerRB.velocity.z
+                );
             }
 
             if (Input.GetButtonUp("Horizontal"))
             {
-                playerRB.velocity = new Vector2(playerRB.velocity.x * 0.5f, playerRB.velocity.y);
+                playerRB.velocity = new Vector3(
+                    playerRB.velocity.x * 0.5f,
+                    playerRB.velocity.y,
+                    playerRB.velocity.z
+                );
             }
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            if (animator != null)
-                animator.SetTrigger("PickUp");
-            StartCoroutine(PickUpLock());
+            animator.Play("Run", 0, 0f);
+            Debug.Log("Forced Run animation");
         }
-
         UpdateAnimations();
     }
 
@@ -146,32 +153,28 @@ public class Movement : MonoBehaviour
     {
         slow = 1;
     }
-
+    
+    
+        
     private void UpdateAnimations()
     {
-        if (animator == null) return;
-        float xSpeed = Mathf.Abs(playerRB.velocity.x);
+        if (animator == null)
+        {
+            Debug.Log("Animator is missing!");
+            return;
+        }
 
-        float speedParam = (xSpeed > 0.1f && grounded) ? 1f : 0f;
+        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f 
+                         && grounded 
+                         && !onLedge;
 
-        animator.SetFloat("Speed", speedParam);
-        animator.SetBool("IsGrounded", grounded);
-    }
+        Debug.Log("Animator found: " + animator.name + " | isRunning: " + isRunning);
 
-    private IEnumerator PickUpLock()
-    {
-        isPickingUp = true;
-        playerRB.velocity = new Vector2(0f, playerRB.velocity.y);
-
-        yield return new WaitForSeconds(pickUpLockTime);
-
-        isPickingUp = false;
+        animator.SetBool("isRunning", isRunning);
     }
 
     private void PlayFootsteps()
     {
         PlayerSounds.PlayFootsteps();
     }
-
-
 }
