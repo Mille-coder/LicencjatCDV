@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class MainMenu : MonoBehaviour
         asyncLoader.StartGame(tutorialScene);
 
         Debug.Log("New Game Clicked");
+
+        GameManager.StartedFromMenu = true;
+
+        SceneManager.LoadScene("GameScene");
     }
 
     public void Options()

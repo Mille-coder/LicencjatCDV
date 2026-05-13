@@ -17,6 +17,9 @@ public class OptionsScreen : MonoBehaviour
     [Header("Audio")]
     public Slider masterVolumeSlider;
 
+    [Range(0f, 1f)]
+    public float defaultVolume = 0.75f; // początkowa głośność
+
     private int selectedRes;
     private Bus masterBus;
 
@@ -31,12 +34,14 @@ public class OptionsScreen : MonoBehaviour
 
         masterBus = RuntimeManager.GetBus("bus:/");
 
-        float currentVolume;
-        masterBus.getVolume(out currentVolume);
+        // Wczytanie zapisanej głośności lub ustawienie domyślnej
+        float savedVolume = PlayerPrefs.GetFloat("MasterVolume", defaultVolume);
+
+        masterBus.setVolume(savedVolume);
 
         if (masterVolumeSlider != null)
         {
-            masterVolumeSlider.value = currentVolume;
+            masterVolumeSlider.value = savedVolume;
             masterVolumeSlider.onValueChanged.AddListener(SetMasterVolume);
         }
 
@@ -88,6 +93,10 @@ public class OptionsScreen : MonoBehaviour
     public void SetMasterVolume(float volume)
     {
         masterBus.setVolume(volume);
+
+        // zapis głośności
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+        PlayerPrefs.Save();
     }
 
     public void Close()
