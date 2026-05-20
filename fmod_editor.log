@@ -11,7 +11,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 0
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x74e604e08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x777a04008 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -20,8 +20,118 @@
 [LOG] Manager::init                            : done.
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
-[LOG] BankLoader::serializeBank                : fileversion = 146, compatVersion = 146 (oldest = 44, newest = 146)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = Assets/Sound/Fmod_Project/Sound/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::getAsyncThread              : index = 0 / 5
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x76c575188, queue head = 0x7807254d8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x76c575188
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Sound/Fmod_Project/Sound/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2890528
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 25792
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7809dddc8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 500
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='0003AC_S_24_PackOfVariousDogsBarking', format=5, channels=2, frequency=48000, lengthbytes=108032, lengthpcm=706809, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.858986.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x76c575188
+[LOG] SoundI::release                          : 0003AC_S_24_PackOfVariousDogsBarking (0x76c575188)
+[LOG] SoundI::release                          :     0003AC_S_24_PackOfVariousDogsBarking (0x7809dde08)
+[LOG] SoundI::release                          :     0003AC_S_24_PackOfVariousDogsBarking (0x76c575508)
+[LOG] SoundI::release                          : Wind (1) Loop (0x770fdc8c8)
+[LOG] SoundI::release                          :     Wind (1) Loop (0x7809ddb08)
+[LOG] SoundI::release                          :     Wind (1) Loop (0x770fdddc8)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x7705c1f88)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dd088)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770ffca88)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x770ff9508)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dd808)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770fdf808)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x7705c2688)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dd388)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770fddc08)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x7705c1888)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x77740b308)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770ffc1c8)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x7705c0008)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dcf08)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770ffc388)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x770ff81c8)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dd688)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770fdda48)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x7705c2f48)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dd208)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770ffebc8)
+[LOG] SoundI::release                          : Loops_Electric_TestlaMini_06 (0x7705c08c8)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x7809dd508)
+[LOG] SoundI::release                          :     Loops_Electric_TestlaMini_06 (0x770fdf9c8)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c0548)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dca88)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770fffb88)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c1c08)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc908)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffcc48)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c0a88)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x77740b488)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffd888)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c39c8)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc788)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770fff108)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c0388)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x780793c08)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x76d428e08)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c3d48)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc608)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffc548)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c1a48)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x780790a88)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x76d428008)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c3108)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc488)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffed88)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c2848)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x780793a88)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x76d428708)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c2308)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc308)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffe688)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c1348)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x780793308)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x76d428c48)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c2d88)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dcd88)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffc008)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c0c48)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc188)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffda48)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c0fc8)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x780792408)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffaa08)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c0708)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dcc08)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffe148)
+[LOG] SoundI::release                          : Fire (3) Loop (0x7705c1188)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x7809dc008)
+[LOG] SoundI::release                          :     Fire (3) Loop (0x770ffcfc8)
+[LOG] SoundI::release                          :  (0x780791688)
+[LOG] SoundI::release                          :     Flame (9) (0x780793008)
+[LOG] SoundI::release                          :  (0x780790008)
+[LOG] SoundI::release                          :     Call Classic Old Lift Elevator Button With Ride 1 (0x780792e88)
+[LOG] SoundI::release                          :  (0x780790188)
+[LOG] SoundI::release                          :     Window Sliding Open Furniture Moving 3 (0x780790788)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::closeInternal                   : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -29,3 +139,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::closeInternal                   : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
