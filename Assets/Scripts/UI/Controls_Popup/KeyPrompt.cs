@@ -27,6 +27,7 @@ public class KeyPrompt : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             promptCanvas.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }

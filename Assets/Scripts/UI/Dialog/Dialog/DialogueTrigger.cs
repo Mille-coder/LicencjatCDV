@@ -25,13 +25,13 @@ public class DialogueTrigger : MonoBehaviour
 
     IEnumerator DisableAfterDialogue()
     {
-        // czekamy a¿ dialog siê skoñczy
+        // czekamy aï¿½ dialog siï¿½ skoï¿½czy
         while (dialogueManager.IsDialogueOpen)
         {
             yield return null;
         }
 
-        // wy³¹cza ca³y obiekt DialogCollider
+        // wyï¿½ï¿½cza caï¿½y obiekt DialogCollider
         gameObject.SetActive(false);
     }
 }
