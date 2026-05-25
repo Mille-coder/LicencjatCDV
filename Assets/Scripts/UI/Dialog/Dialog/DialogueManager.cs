@@ -12,6 +12,9 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Ustawienia")]
     public float typingSpeed = 0.03f;
+    public float autoNextDelay = 3f;
+
+    private Coroutine autoNextCoroutine;
 
     private DialogueLine[] lines;
     private int index;
@@ -56,6 +59,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+
     void ShowLine()
     {
         portraitImage.sprite = lines[index].portrait;
@@ -64,6 +68,11 @@ public class DialogueManager : MonoBehaviour
             StopCoroutine(typingCoroutine);
 
         typingCoroutine = StartCoroutine(TypeText(lines[index].text));
+
+        if (autoNextCoroutine != null)
+            StopCoroutine(autoNextCoroutine);
+
+        autoNextCoroutine = StartCoroutine(AutoNext());
     }
 
     IEnumerator TypeText(string text)
@@ -78,6 +87,21 @@ public class DialogueManager : MonoBehaviour
         }
 
         isTyping = false;
+    }
+
+    IEnumerator AutoNext()
+    {
+        yield return new WaitForSeconds(autoNextDelay);
+
+        if (!isTyping)
+        {
+            index++;
+
+            if (index >= lines.Length)
+                EndDialogue();
+            else
+                ShowLine();
+        }
     }
 
     void EndDialogue()

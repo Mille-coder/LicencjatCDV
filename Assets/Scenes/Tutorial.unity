@@ -39982,6 +39982,7 @@ Transform:
   - {fileID: 531204458}
   - {fileID: 1733186119}
   - {fileID: 1702601291}
+  - {fileID: 1938038159}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &574212170 stripped
@@ -54467,6 +54468,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761172215}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &762135233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762135234}
+  - component: {fileID: 762135237}
+  - component: {fileID: 762135236}
+  - component: {fileID: 762135235}
+  m_Layer: 0
+  m_Name: Climb up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762135234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762135233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.93, y: 89.55, z: -416.71}
+  m_LocalScale: {x: 0.8471581, y: 3.03912, z: 2.6381}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1804724950}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &762135235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762135233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23f5b4ae518c554482db88a4e19126f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptCanvas: {fileID: 1023877015}
+  keyImage: {fileID: 622060560}
+  keyIcon: {fileID: 21300000, guid: d95dec2f9156641e49918167890d7ce6, type: 3}
+--- !u!114 &762135236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762135233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65145199e0aec734798b39aca83e1cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &762135237
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762135233}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9296371, y: 0.8897529, z: 2.6712651}
+  m_Center: {x: -1.463828, y: -0.1621119, z: 0.5735042}
 --- !u!1001 &762310868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108843,7 +108926,6 @@ Transform:
   - {fileID: 689034668}
   - {fileID: 253579255}
   - {fileID: 95497570}
-  - {fileID: 1938038159}
   m_Father: {fileID: 1693476698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1443987472 stripped
@@ -130628,6 +130710,7 @@ MonoBehaviour:
   portraitImage: {fileID: 994254288}
   dialogueText: {fileID: 60247294}
   typingSpeed: 0.04
+  autoNextDelay: 3
 --- !u!4 &1696210400
 Transform:
   m_ObjectHideFlags: 0
@@ -139015,6 +139098,7 @@ Transform:
   - {fileID: 642274806}
   - {fileID: 1210565915}
   - {fileID: 1209701827}
+  - {fileID: 762135234}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1804780584
@@ -150370,12 +150454,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938038158}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.582, y: 4.577, z: -3.559}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.028084, y: 6.0286736, z: -0.45758247}
+  m_LocalScale: {x: 1.7735388, y: 1.7735388, z: 1.7735388}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1443890048}
+  m_Father: {fileID: 573311452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1938038160
 MonoBehaviour:
@@ -150390,29 +150474,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines:
-  - portrait: {fileID: 21300000, guid: a540ff2eec72f44ea9c18faf6bef02f5, type: 3}
+  - portrait: {fileID: 21300000, guid: 0264b88cb9b4546e1835f686184d0ff0, type: 3}
     text: Please-! Someone help me!
-  - portrait: {fileID: 21300000, guid: 9fa76810c86df4dcf80b14183fbf378d, type: 3}
+  - portrait: {fileID: 21300000, guid: a76a5b05a8fe04192bcb6ce1010473fc, type: 3}
     text: "Hey-! I\u2019m here!"
-  - portrait: {fileID: 21300000, guid: 9fa76810c86df4dcf80b14183fbf378d, type: 3}
+  - portrait: {fileID: 21300000, guid: a76a5b05a8fe04192bcb6ce1010473fc, type: 3}
     text: "\u2026I\u2019ve got you."
-  - portrait: {fileID: 21300000, guid: a540ff2eec72f44ea9c18faf6bef02f5, type: 3}
+  - portrait: {fileID: 21300000, guid: 0264b88cb9b4546e1835f686184d0ff0, type: 3}
     text: "You came\u2026"
-  - portrait: {fileID: 21300000, guid: a540ff2eec72f44ea9c18faf6bef02f5, type: 3}
+  - portrait: {fileID: 21300000, guid: 0264b88cb9b4546e1835f686184d0ff0, type: 3}
     text: I thought I was going to-
-  - portrait: {fileID: 21300000, guid: fc126626ed9dd4bf6b53ac4483ef1ae0, type: 3}
+  - portrait: {fileID: 21300000, guid: e15c2541cc0b84b08be55366220eae2b, type: 3}
     text: ...
-  - portrait: {fileID: 21300000, guid: 9fa76810c86df4dcf80b14183fbf378d, type: 3}
+  - portrait: {fileID: 21300000, guid: a76a5b05a8fe04192bcb6ce1010473fc, type: 3}
     text: "\u2026What?"
-  - portrait: {fileID: 21300000, guid: a540ff2eec72f44ea9c18faf6bef02f5, type: 3}
+  - portrait: {fileID: 21300000, guid: 0264b88cb9b4546e1835f686184d0ff0, type: 3}
     text: "Please\u2026 help me."
-  - portrait: {fileID: 21300000, guid: a07c21a639560e3479d2292177e8713d, type: 3}
+  - portrait: {fileID: 21300000, guid: 872886b2bebc0406ab60eed8e659236b, type: 3}
     text: "Jay! We don\u2019t have time!"
-  - portrait: {fileID: 21300000, guid: a07c21a639560e3479d2292177e8713d, type: 3}
+  - portrait: {fileID: 21300000, guid: 872886b2bebc0406ab60eed8e659236b, type: 3}
     text: "That structure\u2019s unstable. Move!"
-  - portrait: {fileID: 21300000, guid: 9fa76810c86df4dcf80b14183fbf378d, type: 3}
-    text: Stay close.
-  - portrait: {fileID: 21300000, guid: 9fa76810c86df4dcf80b14183fbf378d, type: 3}
+  - portrait: {fileID: 21300000, guid: a76a5b05a8fe04192bcb6ce1010473fc, type: 3}
+    text: Stay close. I will get you to firetrack
+  - portrait: {fileID: 21300000, guid: a76a5b05a8fe04192bcb6ce1010473fc, type: 3}
     text: "We\u2019re getting out."
   dialogueManager: {fileID: 1696210399}
 --- !u!65 &1938038161
