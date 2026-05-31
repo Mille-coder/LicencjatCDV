@@ -19,14 +19,19 @@ public class Movement : MonoBehaviour
 
     int slow = 1;
 
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
-        animator = GetComponentInChildren<Animator>();
 
-        Debug.Log("Animator found on: " + animator.gameObject.name);
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
+
+        if (animator == null)
+            Debug.LogError("No Animator found on Player or its children!");
+        else
+            Debug.Log("Animator found on: " + animator.gameObject.name);
     }
 
     private void OnEnable()
@@ -98,8 +103,12 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            animator.Play("Run", 0, 0f);
-            Debug.Log("Forced Run animation");
+            if (animator != null)
+            {
+                animator.SetBool("isRunning", true);
+                animator.Play("rig|Run", 0, 0f);
+                Debug.Log("Forced rig|Run animation and set isRunning true");
+            }
         }
         UpdateAnimations();
     }
@@ -160,17 +169,23 @@ public class Movement : MonoBehaviour
     {
         if (animator == null)
         {
-            Debug.Log("Animator is missing!");
+            Debug.LogError("Animator is missing!");
             return;
         }
 
-        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f 
-                         && grounded 
-                         && !onLedge;
-
-        Debug.Log("Animator found: " + animator.name + " | isRunning: " + isRunning);
+        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f && grounded && !onLedge;
 
         animator.SetBool("isRunning", isRunning);
+
+        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+
+        Debug.Log(
+            "isRunning: " + animator.GetBool("isRunning") +
+            " | In transition: " + animator.IsInTransition(0) +
+            " | Idle: " + state.IsName("rig|Idle") +
+            " | Run: " + state.IsName("rig|Run") +
+            " | Normalized time: " + state.normalizedTime
+        );
     }
 
     private void PlayFootsteps()
