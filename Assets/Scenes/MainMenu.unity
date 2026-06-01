@@ -655,15 +655,35 @@ PrefabInstance:
       value: 25.67
       objectReference: {fileID: 0}
     - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384634093915696098, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3385697125185536595, guid: 023de43a3fce06746b44833226383986, type: 3}
@@ -814,14 +834,42 @@ PrefabInstance:
       propertyPath: m_Colors.m_NormalColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7775032386909312704, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7775032386909312704, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8098867777289542311, guid: 023de43a3fce06746b44833226383986, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.9999771
+      value: -0.9999695
       objectReference: {fileID: 0}
     - target: {fileID: 8098867777289542311, guid: 023de43a3fce06746b44833226383986, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 8548240636759100457, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548240636759100457, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548240636759100457, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548240636759100457, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548240636759100457, guid: 023de43a3fce06746b44833226383986, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
     - target: {fileID: 8581327836104108199, guid: 023de43a3fce06746b44833226383986, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -1139,7 +1187,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435437974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.015611696, y: 0.033294044, z: 0.4433}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1162,8 +1210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.05
   fadeDuration: 0.05
   respawnDelay: 0.2
@@ -1187,7 +1235,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  - {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1221,7 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1399,7 +1447,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526531290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.017167583, y: 0.036612187, z: 0.48748}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1422,8 +1470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.1
   fadeDuration: 1.2
   respawnDelay: 0.2
@@ -1447,7 +1495,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  - {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1481,7 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2191,9 +2239,9 @@ Transform:
   m_GameObject: {fileID: 1013891512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -362, y: 184, z: 150}
-  m_LocalScale: {x: 906.3056, y: 424.9, z: 56.6441}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 105}
+  m_LocalScale: {x: 1082.09, y: 533.8382, z: 533.8382}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2225,7 +2273,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064090135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.027125893, y: 0.057849627, z: 0.77025}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2248,8 +2296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.4
   fadeDuration: 0.5
   respawnDelay: 0.2
@@ -2273,7 +2321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  - {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2307,7 +2355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2397,7 +2445,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115468947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.035217, y: 0.075105, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2420,8 +2468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.4
   fadeDuration: 1.2
   respawnDelay: 0.2
@@ -2445,7 +2493,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  - {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2479,7 +2527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2533,7 +2581,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127048852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.017166877, y: 0.03661068, z: 0.48746}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2556,8 +2604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.2
   fadeDuration: 0.5
   respawnDelay: 0.2
@@ -2581,7 +2629,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  - {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2615,7 +2663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3153,7 +3201,7 @@ Canvas:
   m_GameObject: {fileID: 1249965277}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1661346215}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -3240,7 +3288,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301754134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.022146208, y: 0.047229774, z: 0.62885}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3263,8 +3311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.05
   fadeDuration: 0.1
   respawnDelay: 0.2
@@ -3322,7 +3370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3376,7 +3424,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625447801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 0.023703152, y: 0.05055017, z: 0.67306}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3399,8 +3447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8df821187ea449aac9b7a78a38ccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 1062, y: 499, z: 0}
-  areaSize: {x: 1920, y: 1080}
+  center: {x: 0, y: 0, z: 100}
+  areaSize: {x: 800, y: 600}
   visibleTime: 0.4
   fadeDuration: 0.05
   respawnDelay: 0.2
@@ -3424,7 +3472,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  - {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3458,7 +3506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 91735f469d148084a967d2f8f64a2cec, type: 2}
+  m_Material: {fileID: 2100000, guid: 8ccee903c46cc624c8ca2cc41fe8ec1e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3524,14 +3572,14 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 61.587128
+  m_FocalLength: 3.628617
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -3546,7 +3594,7 @@ Camera:
     height: 1
   near clip plane: 1
   far clip plane: 158.53
-  field of view: 136.8968
+  field of view: 146.35097
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
