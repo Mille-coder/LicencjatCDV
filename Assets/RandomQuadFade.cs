@@ -15,19 +15,31 @@ public class RandomQuadFade : MonoBehaviour
 
     private Renderer rend;
     private Material runtimeMaterial;
-    private Color baseColor;
+
+    private const string FresnelProperty = "_Fresnel";
+    private Color originalFresnelColor;
 
     private void Awake()
     {
         rend = GetComponent<Renderer>();
 
-        // Unity zrobi instancję materiału tylko dla tego obiektu
+        // instancja materiału dla tego obiektu
         runtimeMaterial = rend.material;
-        baseColor = runtimeMaterial.color;
+
+        if (runtimeMaterial.HasProperty(FresnelProperty))
+        {
+            originalFresnelColor = runtimeMaterial.GetColor(FresnelProperty);
+        }
+        else
+        {
+            Debug.LogError($"Shader nie posiada właściwości {FresnelProperty}");
+            enabled = false;
+        }
     }
 
     private void OnEnable()
     {
+        StopAllCoroutines();
         StartCoroutine(FadeLoop());
     }
 
@@ -37,7 +49,8 @@ public class RandomQuadFade : MonoBehaviour
         {
             MoveRandom();
 
-            SetAlpha(1f);
+            // pełna widoczność
+            runtimeMaterial.SetColor(FresnelProperty, originalFresnelColor);
 
             yield return new WaitForSeconds(visibleTime);
 
@@ -46,11 +59,18 @@ public class RandomQuadFade : MonoBehaviour
             while (t < fadeDuration)
             {
                 t += Time.deltaTime;
-                SetAlpha(1f - (t / fadeDuration));
+
+                float progress = Mathf.Clamp01(t / fadeDuration);
+
+                Color fresnelColor =
+                    Color.Lerp(originalFresnelColor, Color.black, progress);
+
+                runtimeMaterial.SetColor(FresnelProperty, fresnelColor);
+
                 yield return null;
             }
 
-            SetAlpha(0f);
+            runtimeMaterial.SetColor(FresnelProperty, Color.black);
 
             yield return new WaitForSeconds(respawnDelay);
         }
@@ -64,10 +84,11 @@ public class RandomQuadFade : MonoBehaviour
         transform.position = center + new Vector3(x, y, 0f);
     }
 
-    private void SetAlpha(float alpha)
+    private void OnDisable()
     {
-        Color c = baseColor;
-        c.a = alpha;
-        runtimeMaterial.color = c;
+        if (runtimeMaterial != null)
+        {
+            runtimeMaterial.SetColor(FresnelProperty, originalFresnelColor);
+        }
     }
 }
