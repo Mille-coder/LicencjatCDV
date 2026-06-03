@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -10,6 +11,9 @@ public class NextSceneTrigger : MonoBehaviour
 #if UNITY_EDITOR
     public SceneAsset scene;
 #endif
+
+    [Header("Event przed zmian¹ sceny")]
+    public UnityEvent onBeforeSceneLoad;
 
     private string sceneName;
 
@@ -27,6 +31,8 @@ public class NextSceneTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            onBeforeSceneLoad?.Invoke();
+
             SceneManager.LoadScene(sceneName);
         }
     }

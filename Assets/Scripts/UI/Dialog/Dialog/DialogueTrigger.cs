@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Manager")]
     public DialogueManager dialogueManager;
+
+    [Header("Event po zakończeniu dialogu")]
+    public UnityEvent onDialogueFinished;
 
     private bool alreadyPlayed = false;
 
@@ -25,13 +29,15 @@ public class DialogueTrigger : MonoBehaviour
 
     IEnumerator DisableAfterDialogue()
     {
-        // czekamy a� dialog si� sko�czy
+        
         while (dialogueManager.IsDialogueOpen)
         {
             yield return null;
         }
 
-        // wy��cza ca�y obiekt DialogCollider
+        onDialogueFinished?.Invoke();
+
+       
         gameObject.SetActive(false);
     }
 }
