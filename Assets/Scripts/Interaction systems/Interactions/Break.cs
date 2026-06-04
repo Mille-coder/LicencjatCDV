@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Break : MonoBehaviour, IInteractable
 {
+    [SerializeField] private string axeSwingTrigger = "AxeSwing";
     public bool CanInteract(Interactor interactor)
     {
         if (interactor.gameObject.GetComponent<Equipment>().hasAxe == true)
@@ -18,6 +19,15 @@ public class Break : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
+        Animator animator = interactor.gameObject.GetComponentInChildren<Animator>();
+        if (animator != null)
+        {
+            animator.SetTrigger(axeSwingTrigger);
+        }
+        else
+        {
+            Debug.LogWarning("Break interaction could not find an Animator on the player or its children.");
+        }
         Destroy(gameObject);
 
         return true;
