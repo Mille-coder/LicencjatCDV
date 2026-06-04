@@ -7,6 +7,7 @@ public class KeyPrompt : MonoBehaviour
     public GameObject promptCanvas;
     public Image keyImage;
     public Sprite keyIcon;
+    public KeyCode actionKey;
 
     private void Start()
     {
@@ -22,9 +23,9 @@ public class KeyPrompt : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void Update()
     {
-        if (other.CompareTag("Player"))
+        if (Input.GetKeyDown(actionKey))
         {
             promptCanvas.SetActive(false);
             gameObject.SetActive(false);

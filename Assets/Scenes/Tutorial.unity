@@ -6269,6 +6269,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f7a372e15b04a76ba6cd118b340c6f, type: 3}
   m_PrefabInstance: {fileID: 1466226947}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &19559664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2570266106659288269, guid: ff7259b49369d60488bdae58d6548571, type: 3}
+  m_PrefabInstance: {fileID: 1330004567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &20218178 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0e353c4fb5be240a892e794db3947718, type: 3}
@@ -36703,9 +36708,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tasks:
   - taskName: Enter the house
-  - taskName: Find the First Victim
+  - taskName: Find the First Survivor
   - taskName: Carry the woman to the fire truck
-  - taskName: ' Return to house and find the second victim'
+  - taskName: ' Return to house and find the second Survivor'
   - taskName: Find your way back
   taskPanel: {fileID: 722515554}
   checkboxText: {fileID: 845721324}
@@ -41146,6 +41151,7 @@ MonoBehaviour:
   promptCanvas: {fileID: 1429614078}
   keyImage: {fileID: 2114503895}
   keyIcon: {fileID: 21300000, guid: 58c744f3a77cf49f9a1fde7006e101a0, type: 3}
+  actionKey: 100
 --- !u!65 &440383180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51858,6 +51864,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbf328177a9014e01a3843c701080b51, type: 3}
+--- !u!114 &606258972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1971362468976334598, guid: ff7259b49369d60488bdae58d6548571, type: 3}
+  m_PrefabInstance: {fileID: 1330004567}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b02429919639bc4db2d724a0fc96443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &606938109 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c3442d8851d464ef59e4a766762efd3a, type: 3}
@@ -57604,6 +57621,7 @@ MonoBehaviour:
   promptCanvas: {fileID: 1429614078}
   keyImage: {fileID: 2114503895}
   keyIcon: {fileID: 21300000, guid: 837b921916fad4d8f95803e5ae3d8408, type: 3}
+  actionKey: 32
 --- !u!65 &675063870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64253,6 +64271,7 @@ MonoBehaviour:
   promptCanvas: {fileID: 1429614078}
   keyImage: {fileID: 2114503895}
   keyIcon: {fileID: -279126467, guid: d95dec2f9156641e49918167890d7ce6, type: 3}
+  actionKey: 119
 --- !u!114 &762135236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88430,6 +88449,7 @@ MonoBehaviour:
   promptCanvas: {fileID: 1429614078}
   keyImage: {fileID: 2114503895}
   keyIcon: {fileID: 1601545341, guid: 51546e962b8b64043a5414ae36ab7200, type: 3}
+  actionKey: 101
 --- !u!1 &931037270
 GameObject:
   m_ObjectHideFlags: 0
@@ -117446,7 +117466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 879c73768d7094d518673dbe363c988e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.89
+      value: -4.707
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 879c73768d7094d518673dbe363c988e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -131331,7 +131351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1413707511
 Transform:
   m_ObjectHideFlags: 0
@@ -131366,8 +131386,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.396332, y: 1, z: 1}
-  m_Center: {x: 0.25873566, y: 0, z: 0}
+  m_Size: {x: 2.104929, y: 1, z: 1}
+  m_Center: {x: -0.02610302, y: 0, z: 0}
 --- !u!114 &1413707513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131382,7 +131402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Woman1: {fileID: 823326766}
   Woman2: {fileID: 1554544873}
-  CarriedWoman: {fileID: 0}
+  CarriedWoman: {fileID: 19559664}
   onDropoff:
     m_PersistentCalls:
       m_Calls:
@@ -197071,6 +197091,7 @@ MonoBehaviour:
   promptCanvas: {fileID: 1429614078}
   keyImage: {fileID: 2114503895}
   keyIcon: {fileID: 1601545341, guid: 51546e962b8b64043a5414ae36ab7200, type: 3}
+  actionKey: 101
 --- !u!65 &2051028583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -208630,7 +208651,7 @@ PrefabInstance:
     - target: {fileID: 1002755210608762004, guid: 70949c20948306b4396f93270f55c5c1, type: 3}
       propertyPath: playerDeathManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 606258972}
     - target: {fileID: 2518444706095933074, guid: 70949c20948306b4396f93270f55c5c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
