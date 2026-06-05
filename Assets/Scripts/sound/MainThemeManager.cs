@@ -22,6 +22,9 @@ public class MainThemeManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         musicInstance = RuntimeManager.CreateInstance(musicEvent);
+
+        musicInstance.setVolume(0.5f);
+
         musicInstance.start();
     }
 
