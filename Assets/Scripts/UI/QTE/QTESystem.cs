@@ -12,18 +12,22 @@ public class QTESystem : MonoBehaviour
     [SerializeField] private Image successField;
     [SerializeField] public Image marker;
 
+    [Header("Player")]
+    [SerializeField] private Transform player;
+
     [Header("QTE List")]
     [SerializeField] private List<QTEData> QTEs = new List<QTEData>();
-    
 
     [Serializable]
     public class QTEData
     {
         public QTETrigger trigger;
 
-        
         public float difficulty;
         public float speed;
+
+        [Header("Respawn")]
+        public Transform respawnPoint;
     }
 
     private float currentSpeed = 1;
@@ -31,8 +35,7 @@ public class QTESystem : MonoBehaviour
     private HashSet<QTETrigger> wonQTEs = new HashSet<QTETrigger>();
     private Dictionary<QTETrigger, QTEData> QTELookup;
 
-    
-
+    private QTEData currentQTE;
 
     private void Awake()
     {
@@ -46,62 +49,67 @@ public class QTESystem : MonoBehaviour
             if (!QTELookup.ContainsKey(QTE.trigger))
                 QTELookup.Add(QTE.trigger, QTE);
         }
-        QTEPanel.SetActive(false);
 
-       
+        QTEPanel.SetActive(false);
     }
 
     void FixedUpdate()
     {
-        
         marker.rectTransform.Rotate(new Vector3(0, 0, currentSpeed));
+
         if (!QTEPanel.activeSelf)
         {
             successField.rectTransform.Rotate(new Vector3(0, 0, -2));
         }
-        
     }
 
     void Update()
     {
-        if(QTEPanel.activeSelf)
+        if (QTEPanel.activeSelf)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 float markerAngle = marker.rectTransform.eulerAngles.z;
                 float successAngle = successField.rectTransform.eulerAngles.z;
 
-                    if (markerAngle < successAngle && markerAngle > successAngle - 360*successField.fillAmount)
+                if (markerAngle < successAngle &&
+                    markerAngle > successAngle - 360 * successField.fillAmount)
+                {
+                    QTEPanel.SetActive(false);
+                    GlobalEvents.RaiseOnMovementOn();
+                }
+                else
+                {
+                    Debug.Log("failed");
+
+                    if (currentQTE != null && currentQTE.respawnPoint != null)
                     {
-                        QTEPanel.SetActive(false);
-                        GlobalEvents.RaiseOnMovementOn();
+                        player.position = currentQTE.respawnPoint.position;
                     }
-                    else
-                    {
-                        Debug.Log("failed");
-                    }
+
+                    QTEPanel.SetActive(false);
+                    GlobalEvents.RaiseOnMovementOn();
+                }
             }
         }
     }
-
 
     public void TriggerQTE(QTETrigger trigger)
     {
         if (wonQTEs.Contains(trigger))
             return;
+
         if (!QTELookup.ContainsKey(trigger))
             return;
+
         var data = QTELookup[trigger];
 
-        var thisqtedata = QTELookup[trigger];
+        currentQTE = data;
 
-    // Set success field size based on difficulty
         successField.fillAmount = Mathf.Clamp01(data.difficulty);
         currentSpeed = data.speed;
 
         QTEPanel.SetActive(true);
         GlobalEvents.RaiseOnMovementOff();
     }
-
-    
 }
