@@ -9,6 +9,8 @@ public class KeyPrompt : MonoBehaviour
     public Sprite keyIcon;
     public KeyCode actionKey;
 
+    private bool playerInside;
+
     private void Start()
     {
         promptCanvas.SetActive(false);
@@ -18,14 +20,25 @@ public class KeyPrompt : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            keyImage.sprite = keyIcon;   
+            playerInside = true;
+
+            keyImage.sprite = keyIcon;
             promptCanvas.SetActive(true);
         }
     }
 
-    public void Update()
+    private void OnTriggerExit(Collider other)
     {
-        if (Input.GetKeyDown(actionKey))
+        if (other.CompareTag("Player"))
+        {
+            playerInside = false;
+            promptCanvas.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        if (playerInside && Input.GetKeyDown(actionKey))
         {
             promptCanvas.SetActive(false);
             gameObject.SetActive(false);

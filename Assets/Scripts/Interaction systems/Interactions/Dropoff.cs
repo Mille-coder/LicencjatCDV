@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Dropoff : MonoBehaviour, IInteractable
 {
@@ -9,33 +10,60 @@ public class Dropoff : MonoBehaviour, IInteractable
     [SerializeField] GameObject Woman2;
     [SerializeField] GameObject CarriedWoman;
 
-    [Header("Event po od≥oøeniu kobiety")]
+    [SerializeField] private Equipment equipment;
+
+    [Header("Prompt UI")]
+    [SerializeField] private GameObject promptCanvas;
+    [SerializeField] private Image keyImage;
+    [SerializeField] private Sprite eIcon;
+
+    [Header("Event po od≈Ço≈ºeniu kobiety")]
     public UnityEvent onDropoff;
+
+    private void Start()
+    {
+        if (promptCanvas != null)
+            promptCanvas.SetActive(false);
+    }
 
     public bool CanInteract(Interactor interactor)
     {
-        return true;
+        bool canInteract = equipment != null && equipment.haswoman;
+
+        if (promptCanvas != null)
+            promptCanvas.SetActive(canInteract);
+
+        if (canInteract && keyImage != null)
+            keyImage.sprite = eIcon;
+
+        return canInteract;
     }
 
     public bool Interact(Interactor interactor)
     {
+        if (equipment == null || !equipment.haswoman)
+            return false;
+
+        if (promptCanvas != null)
+            promptCanvas.SetActive(false);
+
         if (Woman1.activeSelf)
         {
             Woman2.SetActive(true);
             CarriedWoman.SetActive(false);
-
-            onDropoff?.Invoke();
-
-            gameObject.SetActive(false);
-            return true;
+        }
+        else
+        {
+            Woman1.SetActive(true);
+            CarriedWoman.SetActive(false);
         }
 
-        Woman1.SetActive(true);
-        CarriedWoman.SetActive(false);
+        equipment.haswoman = false;
 
         onDropoff?.Invoke();
 
         gameObject.SetActive(false);
+
         return true;
     }
 }
