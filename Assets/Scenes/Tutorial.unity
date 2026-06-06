@@ -7658,7 +7658,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37815665}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -9467,8 +9467,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 832791228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.18300001, y: 0.26880273}
-  m_AnchorMax: {x: 0.94000006, y: 0.69040823}
+  m_AnchorMin: {x: 0.18300001, y: 0.16000001}
+  m_AnchorMax: {x: 0.94000006, y: 0.5951973}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12033,11 +12033,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 1.55
+      objectReference: {fileID: 0}
     - target: {fileID: 8905999157231704704, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
       propertyPath: m_Name
       value: VFX_OnlyFire (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -21324,7 +21333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 3.84
+      value: 5.1313896
       objectReference: {fileID: 0}
     - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: OverrideMinDistance
@@ -29404,7 +29413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
+  nonRigidbodyVelocity: 1
   attenuationObject: {fileID: 1661918698}
 --- !u!81 &275051010
 AudioListener:
@@ -32072,7 +32081,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321154008}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -40802,8 +40811,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 284311962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.136, y: 0.33226627}
-  m_AnchorMax: {x: 0.9496498, y: 0.76000005}
+  m_AnchorMin: {x: 0.136, y: 0.36357793}
+  m_AnchorMax: {x: 0.9496498, y: 0.7391105}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -45530,6 +45539,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 4.980419
+      objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
       propertyPath: m_Name
       value: VFX_SmokeFire_Green (4)
@@ -45603,7 +45616,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500394106}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -46356,8 +46369,12 @@ PrefabInstance:
       value: 1.6099
       objectReference: {fileID: 0}
     - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 2.22
+      value: 2.9944
       objectReference: {fileID: 0}
     - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: OverrideMinDistance
@@ -46949,7 +46966,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524353681}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -47452,6 +47469,14 @@ PrefabInstance:
       propertyPath: m_InnerSpotAngle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5348098677987260894, guid: f12280189807f4297b68f3b10635b236, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 6.8737793
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348098677987260894, guid: f12280189807f4297b68f3b10635b236, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3.9520798
+      objectReference: {fileID: 0}
     - target: {fileID: 5383399784409900717, guid: f12280189807f4297b68f3b10635b236, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -47541,7 +47566,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534412161}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -52340,7 +52365,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609214959}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -57183,7 +57208,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667547994}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -58441,7 +58466,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681513031}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -59323,43 +59348,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8229098
+      value: -2.8231738
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.09
+      value: -5.0896773
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2975997
+      value: -1.2975197
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7029787
+      value: 0.7031803
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.5838192
+      value: -0.5844251
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.40524063
+      value: -0.40407303
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.027499696
+      value: 0.02664397
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -52.991
+      value: -53.166
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.964
+      value: -90.923
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 58.245
+      value: 58.248
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -59933,7 +59958,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702761977}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -60390,7 +60415,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713067806}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -62647,7 +62672,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743105035}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -63869,7 +63894,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756657322}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -74537,11 +74562,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 1.55
+      objectReference: {fileID: 0}
     - target: {fileID: 8905999157231704704, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
       propertyPath: m_Name
       value: VFX_OnlyFire
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -76568,11 +76602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 3
+      value: 3.4129333
       objectReference: {fileID: 0}
     - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: OverrideMinDistance
-      value: 1
+      value: 1.3381252
       objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: m_Name
@@ -76981,7 +77015,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854514119}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -80989,6 +81023,10 @@ PrefabInstance:
     - target: {fileID: 2140950094293576930, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 5.794119
       objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
       propertyPath: m_Name
@@ -88625,7 +88663,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931037270}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -90379,10 +90417,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9943bd315297a42fcb40e1feec3dea54, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1584888644}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9943bd315297a42fcb40e1feec3dea54, type: 3}
 --- !u!1001 &955123152
 PrefabInstance:
@@ -90683,7 +90718,7 @@ Transform:
   m_GameObject: {fileID: 966151682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 131.14, y: -11.11, z: 0}
+  m_LocalPosition: {x: 124.48, y: -9.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93069,7 +93104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5877265
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee82f25a8d9ac4c1abc2fc932a574394, type: 3}
       propertyPath: m_LocalRotation.w
@@ -96952,7 +96987,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030945532}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -109868,7 +109903,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139365578}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -111973,7 +112008,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163841452}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -113451,6 +113486,7 @@ GameObject:
   - component: {fileID: 1183679346}
   - component: {fileID: 1183679347}
   - component: {fileID: 1183679349}
+  - component: {fileID: 1183679350}
   m_Layer: 0
   m_Name: StuffToDestroy
   m_TagString: Floor
@@ -113508,6 +113544,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.45, y: 2.3, z: 1}
   m_Center: {x: 1.18, y: 0.95, z: 0}
+--- !u!114 &1183679350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183679345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -127102831
+      Data2: 1279303281
+      Data3: -155627848
+      Data4: -33495268
+    Path: event:/ChopingWood
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1183746964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119731,7 +119798,6 @@ GameObject:
   - component: {fileID: 1262665021}
   - component: {fileID: 1262665023}
   - component: {fileID: 1262665024}
-  - component: {fileID: 1262665025}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -119797,37 +119863,6 @@ MonoBehaviour:
       Data3: -2108005757
       Data4: 176276288
     Path: event:/Doors
---- !u!114 &1262665025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262665020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1435182432
-      Data2: 1094013852
-      Data3: -2108005757
-      Data4: 176276288
-    Path: event:/Doors
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &1262671580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122211,7 +122246,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288844782}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -122436,7 +122471,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VFX_OnlyFire (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -136297,7 +136333,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475084263}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -142711,6 +142747,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 3.76
+      objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 55625dfbe8ff74602982ede78574429c, type: 3}
       propertyPath: m_Name
       value: VFX_SmokeFire_Green (3)
@@ -142814,11 +142854,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1492594542 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9943bd315297a42fcb40e1feec3dea54, type: 3}
-  m_PrefabInstance: {fileID: 954751425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1493129498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c3442d8851d464ef59e4a766762efd3a, type: 3}
@@ -143722,7 +143757,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507514172}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -144038,7 +144073,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512098289}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -146208,7 +146243,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VFX_OnlyFire (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -148781,6 +148817,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 5.0798454
+      objectReference: {fileID: 0}
+    - target: {fileID: 7184716577358661873, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 2.2095032
+      objectReference: {fileID: 0}
     - target: {fileID: 7967666581956070529, guid: 49d79ebf47dcc460f916fb0af2815576, type: 3}
       propertyPath: m_Name
       value: VFX_SmokeFire (1)
@@ -150589,37 +150637,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9943bd315297a42fcb40e1feec3dea54, type: 3}
   m_PrefabInstance: {fileID: 954751425}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1584888644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492594542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1435182432
-      Data2: 1094013852
-      Data3: -2108005757
-      Data4: 176276288
-    Path: event:/Doors
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &1585937409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f7a372e15b04a76ba6cd118b340c6f, type: 3}
@@ -159384,7 +159401,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632044012}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -161111,7 +161128,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650300271}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -161342,11 +161359,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: EventStopTrigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 1.55
+      objectReference: {fileID: 0}
     - target: {fileID: 8905999157231704704, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
       propertyPath: m_Name
       value: VFX_OnlyFire (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -162377,8 +162403,8 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 12.833017
-  OverrideMaxDistance: 18.319166
+  OverrideMinDistance: 6.801752
+  OverrideMaxDistance: 10.296312
 --- !u!4 &1665086832
 Transform:
   m_ObjectHideFlags: 0
@@ -164113,7 +164139,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682678246}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -166082,9 +166108,9 @@ MonoBehaviour:
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 950
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1.6324615
+  OverrideMaxDistance: 3.2554245
 --- !u!4 &1710468899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f7a372e15b04a76ba6cd118b340c6f, type: 3}
@@ -168999,7 +169025,6 @@ GameObject:
   - component: {fileID: 1749282865}
   - component: {fileID: 1749282864}
   - component: {fileID: 1749282863}
-  - component: {fileID: 1749282866}
   m_Layer: 0
   m_Name: MovingBox
   m_TagString: Floor
@@ -169093,27 +169118,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.54, y: 2.74, z: 4.45}
   m_Center: {x: 0, y: -0.55, z: 0.02}
---- !u!114 &1749282866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749282861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8291ddda010c44548ac67b7b9bb1bd8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pulling: 0
-  me: {fileID: 0}
-  moveEvent:
-    Guid:
-      Data1: -1373620726
-      Data2: 1338849670
-      Data3: 1548490675
-      Data4: -1591253217
-    Path: event:/Pushing
 --- !u!4 &1749924003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f7a372e15b04a76ba6cd118b340c6f, type: 3}
@@ -169507,7 +169511,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753585933}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -178775,7 +178779,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806170468}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -178886,6 +178890,14 @@ PrefabInstance:
     - target: {fileID: 629535565426096867, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 4.17894
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556729545788858096, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3.1800156
       objectReference: {fileID: 0}
     - target: {fileID: 8905999157231704704, guid: fef187cdf25f640f48d110214aa9a50f, type: 3}
       propertyPath: m_Name
@@ -194792,7 +194804,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007015653}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -203045,7 +203057,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143055153}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -208307,7 +208319,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146186950}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -208834,14 +208846,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5348098677987260894, guid: f12280189807f4297b68f3b10635b236, type: 3}
       propertyPath: OverrideMaxDistance
-      value: 4.2
+      value: 6.3754807
       objectReference: {fileID: 0}
     - target: {fileID: 5348098677987260894, guid: f12280189807f4297b68f3b10635b236, type: 3}
       propertyPath: OverrideMinDistance
-      value: 2.8
+      value: 3.88
       objectReference: {fileID: 0}
     - target: {fileID: 5383399784409900717, guid: f12280189807f4297b68f3b10635b236, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827454266394702538, guid: f12280189807f4297b68f3b10635b236, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7827454266394702538, guid: f12280189807f4297b68f3b10635b236, type: 3}
+      propertyPath: m_StaticShadowCaster
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
