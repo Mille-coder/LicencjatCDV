@@ -72,7 +72,7 @@ public class DialogueManager : MonoBehaviour
         if (autoNextCoroutine != null)
             StopCoroutine(autoNextCoroutine);
 
-        autoNextCoroutine = StartCoroutine(AutoNext());
+       // autoNextCoroutine = StartCoroutine(AutoNext());
     }
 
     IEnumerator TypeText(string text)
@@ -89,20 +89,20 @@ public class DialogueManager : MonoBehaviour
         isTyping = false;
     }
 
-    IEnumerator AutoNext()
-    {
-        yield return new WaitForSeconds(autoNextDelay);
+   // IEnumerator AutoNext()
+  //  {
+   //     yield return new WaitForSeconds(autoNextDelay);
 
-        if (!isTyping)
-        {
-            index++;
-
-            if (index >= lines.Length)
-                EndDialogue();
-            else
-                ShowLine();
-        }
-    }
+   //     if (!isTyping)
+    //    {
+    //        index++;
+//
+      //      if (index >= lines.Length)
+//EndDialogue();
+     //       else
+           //     ShowLine();
+    //    }
+  //  }
 
     void EndDialogue()
     {
