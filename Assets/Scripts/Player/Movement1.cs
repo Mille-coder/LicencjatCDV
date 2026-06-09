@@ -179,13 +179,13 @@ public class Movement : MonoBehaviour
 
         AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
 
-        Debug.Log(
-            "isRunning: " + animator.GetBool("isRunning") +
-            " | In transition: " + animator.IsInTransition(0) +
-            " | Idle: " + state.IsName("rig|Idle") +
-            " | Run: " + state.IsName("rig|Run") +
-            " | Normalized time: " + state.normalizedTime
-        );
+       // Debug.Log(
+       //     "isRunning: " + animator.GetBool("isRunning") +
+       //     " | In transition: " + animator.IsInTransition(0) +
+       //     " | Idle: " + state.IsName("rig|Idle") +
+       //     " | Run: " + state.IsName("rig|Run") +
+       //     " | Normalized time: " + state.normalizedTime
+       // );
     }
 
     private void PlayFootsteps()
