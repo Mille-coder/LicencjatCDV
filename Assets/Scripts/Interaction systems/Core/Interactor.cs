@@ -8,6 +8,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private Vector3 raycastOffset = new Vector3(0, 1f, 0);
 
     private Renderer[] currentRenderers;
+    private Renderer parentRenderer;
     private IInteractable currentInteractable;
 
     private void Update()
@@ -59,12 +60,22 @@ public class Interactor : MonoBehaviour
 
         GameObject obj = ((MonoBehaviour)interactable).gameObject;
         currentRenderers = obj.GetComponentsInChildren<Renderer>();
+        if(obj.GetComponent<Renderer>()!= null)
+            {
+                parentRenderer = obj.GetComponent<Renderer>();
+            }
 
         foreach (var r in currentRenderers)
         {
             if (r.gameObject != obj)
                 r.material.SetFloat("_CanPickup", 1f);
         }
+
+        
+        if(obj.GetComponent<Renderer>()!= null)
+            {
+               parentRenderer.material.SetFloat("_CanPickup", 1f); 
+            }
     }
 
     private void ClearHighlight()
@@ -76,6 +87,12 @@ public class Interactor : MonoBehaviour
             if (r != null)
                 r.material.SetFloat("_CanPickup", 0f);
         }
+
+        
+        if(parentRenderer!= null)
+            {
+                parentRenderer.material.SetFloat("_CanPickup", 0f);
+            }
 
         currentRenderers = null;
         currentInteractable = null;
