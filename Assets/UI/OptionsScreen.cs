@@ -18,7 +18,7 @@ public class OptionsScreen : MonoBehaviour
     public Slider masterVolumeSlider;
 
     [Range(0f, 1f)]
-    public float defaultVolume = 0.75f; // początkowa głośność
+    public float defaultVolume = 0.25f; // początkowa głośność
 
     private int selectedRes;
     private Bus masterBus;
