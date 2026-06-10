@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!IsDialogueOpen) return;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
             {

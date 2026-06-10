@@ -15,9 +15,6 @@ public class PopupManager : MonoBehaviour
     [Header("Typing Settings")]
     [SerializeField] private float typingSpeed = 0.04f;
 
-    [Header("Auto Hide")]
-    [SerializeField] private float autoHideDelay = 3f;
-
     [Header("Popups")]
     [SerializeField] private List<PopupData> popups = new List<PopupData>();
 
@@ -25,7 +22,10 @@ public class PopupManager : MonoBehaviour
     private HashSet<Collider> shownPopups = new HashSet<Collider>();
 
     private Coroutine typingCoroutine;
-    private Coroutine autoHideCoroutine;
+
+    private bool isPopupOpen;
+    private bool isTyping;
+    private string currentFullText;
 
     private void Awake()
     {
@@ -40,12 +40,36 @@ public class PopupManager : MonoBehaviour
                 popupLookup.Add(popup.triggerCollider, popup);
         }
 
-        popupPanel.SetActive(false);
+        if (popupPanel != null)
+            popupPanel.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (!isPopupOpen)
+            return;
+
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isTyping)
+            {
+                if (typingCoroutine != null)
+                    StopCoroutine(typingCoroutine);
+
+                popupText.text = currentFullText;
+                isTyping = false;
+
+                GlobalEvents.RaiseOnMovementOn();
+            }
+            else
+            {
+                HidePopup();
+            }
+        }
     }
 
     public void ShowPopup(Collider trigger)
     {
-        // pokaż tylko raz
         if (shownPopups.Contains(trigger))
             return;
 
@@ -57,17 +81,15 @@ public class PopupManager : MonoBehaviour
         var data = popupLookup[trigger];
 
         popupPanel.SetActive(true);
+        isPopupOpen = true;
 
         GlobalEvents.RaiseOnMovementOff();
 
-        // reset coroutine
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        if (autoHideCoroutine != null)
-            StopCoroutine(autoHideCoroutine);
-
-        typingCoroutine = StartCoroutine(TypeText(data.text));
+        currentFullText = data.text;
+        typingCoroutine = StartCoroutine(TypeText(currentFullText));
 
         if (portraitImage != null)
         {
@@ -78,6 +100,7 @@ public class PopupManager : MonoBehaviour
 
     private IEnumerator TypeText(string fullText)
     {
+        isTyping = true;
         popupText.text = "";
 
         foreach (char c in fullText)
@@ -86,16 +109,16 @@ public class PopupManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
 
-       
-        GlobalEvents.RaiseOnMovementOn();
+        isTyping = false;
 
-        autoHideCoroutine = StartCoroutine(AutoHide());
+        GlobalEvents.RaiseOnMovementOn();
     }
 
-    private IEnumerator AutoHide()
+    private void HidePopup()
     {
-        yield return new WaitForSeconds(autoHideDelay);
         popupPanel.SetActive(false);
+        isPopupOpen = false;
+        isTyping = false;
     }
 
     [Serializable]
