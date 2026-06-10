@@ -1,37 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] public int movespeed = 1;
     [SerializeField] public int jumppower;
-    [SerializeField] bool onLedge = false;
-    [SerializeField] GameObject InteractionRange;
-    [SerializeField] PlayerSounds PlayerSounds;
+
+    [Header("State")]
+    [SerializeField] private bool onLedge = false;
+    [SerializeField] private bool pushing = false;
+    [SerializeField] private bool isHoldingTrash = false;
+
+    [Header("References")]
+    [SerializeField] private GameObject InteractionRange;
+    [SerializeField] private PlayerSounds PlayerSounds;
+
+    [SerializeField] private Animator firefighterAnimator;
+    [SerializeField] private GameObject womanModel;
 
     private Ledge activeLedge;
-    private bool pushing = false;
-
     private bool grounded = true;
     private Rigidbody playerRB;
 
-    int slow = 1;
+    private int slow = 1;
 
-    [SerializeField] private Animator animator;
-
-    void Start()
+    private void Start()
     {
         playerRB = GetComponent<Rigidbody>();
 
-        if (animator == null)
-            animator = GetComponentInChildren<Animator>();
+        if (playerRB == null)
+        {
+            Debug.LogError("No Rigidbody found on Player!");
+        }
+        if (firefighterAnimator == null)
+        {
+            firefighterAnimator = GetComponentInChildren<Animator>();
+            Debug.LogWarning("Firefighter Animator was not assigned manually. Found: " +
+                             (firefighterAnimator != null ? firefighterAnimator.gameObject.name : "None"));
+        }
 
-        if (animator == null)
-            Debug.LogError("No Animator found on Player or its children!");
+        if (firefighterAnimator == null)
+        {
+            Debug.LogError("No Firefighter Animator assigned/found!");
+        }
         else
-            Debug.Log("Animator found on: " + animator.gameObject.name);
+        {
+            Debug.Log("Firefighter Animator assigned: " + firefighterAnimator.gameObject.name);
+        }
     }
 
     private void OnEnable()
@@ -46,98 +61,150 @@ public class Movement : MonoBehaviour
         GlobalEvents.OnSlowOn -= SlowOn;
     }
 
-    void Update()
+    private void Update()
     {
-        if (onLedge == true)
-        {
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                transform.position = activeLedge.Gettargetpos();
-                onLedge = false;
-                playerRB.isKinematic = false;
-            }
-        }
+        HandleLedgeInput();
+        HandleMovementInput();
+        HandleDebugAnimationInput();
 
-        if (onLedge == false)
-        {
-            if (grounded == true)
-            {
-                playerRB.velocity = new Vector3(
-                    Input.GetAxisRaw("Horizontal") * movespeed / slow,
-                    playerRB.velocity.y,
-                    playerRB.velocity.z
-                );
-
-                if (Input.GetButtonDown("Jump") && pushing == false)
-                {
-                    playerRB.velocity = new Vector3(
-                        playerRB.velocity.x,
-                        jumppower,
-                        playerRB.velocity.z
-                    );
-
-                    grounded = false;
-
-                    if (animator != null)
-                        animator.SetTrigger("Jump");
-                }
-            }
-
-            if (Input.GetButtonUp("Jump"))
-            {
-                playerRB.velocity = new Vector3(
-                    playerRB.velocity.x,
-                    playerRB.velocity.y * 0.5f,
-                    playerRB.velocity.z
-                );
-            }
-
-            if (Input.GetButtonUp("Horizontal"))
-            {
-                playerRB.velocity = new Vector3(
-                    playerRB.velocity.x * 0.5f,
-                    playerRB.velocity.y,
-                    playerRB.velocity.z
-                );
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            if (animator != null)
-            {
-                animator.SetBool("isRunning", true);
-                animator.Play("rig|Run", 0, 0f);
-                Debug.Log("Forced rig|Run animation and set isRunning true");
-            }
-        }
         UpdateAnimations();
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (playerRB.velocity.x < 0)
-            Turn(true);
+        if (playerRB == null)
+            return;
 
-        if (playerRB.velocity.x > 0)
-            Turn(false);
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Floor")
+        if (playerRB.velocity.x < -0.1f)
         {
-            grounded = true;
+            Turn(true);
+        }
+        else if (playerRB.velocity.x > 0.1f)
+        {
+            Turn(false);
         }
     }
 
-    void Turn(bool direction)
+    private void HandleLedgeInput()
     {
-        if (pushing == false)
+        if (!onLedge)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            if (direction == true)
-                transform.rotation = Quaternion.Euler(0, -90, 0);
-            else
-                transform.rotation = Quaternion.Euler(0, 90, 0);
+            transform.position = activeLedge.Gettargetpos();
+            onLedge = false;
+
+            if (playerRB != null)
+                playerRB.isKinematic = false;
+        }
+    }
+
+    private void HandleMovementInput()
+    {
+        if (playerRB == null)
+            return;
+
+        if (onLedge)
+            return;
+
+        if (grounded)
+        {
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+
+            playerRB.velocity = new Vector3(
+                horizontalInput * movespeed / slow,
+                playerRB.velocity.y,
+                playerRB.velocity.z
+            );
+
+            if (Input.GetButtonDown("Jump") && !pushing)
+            {
+                playerRB.velocity = new Vector3(
+                    playerRB.velocity.x,
+                    jumppower,
+                    playerRB.velocity.z
+                );
+
+                grounded = false;
+
+                if (firefighterAnimator != null)
+                {
+                    firefighterAnimator.SetTrigger("Jump");
+                }
+            }
+        }
+
+        if (Input.GetButtonUp("Jump"))
+        {
+            playerRB.velocity = new Vector3(
+                playerRB.velocity.x,
+                playerRB.velocity.y * 0.5f,
+                playerRB.velocity.z
+            );
+        }
+
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            playerRB.velocity = new Vector3(
+                playerRB.velocity.x * 0.5f,
+                playerRB.velocity.y,
+                playerRB.velocity.z
+            );
+        }
+    }
+
+    private void HandleDebugAnimationInput()
+    {
+        if (firefighterAnimator == null)
+            return;
+    }
+
+    private void UpdateAnimations()
+    {
+        if (firefighterAnimator == null || playerRB == null)
+            return;
+
+        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f && grounded && !onLedge;
+
+        bool isFalling = playerRB.velocity.y < -0.1f && !grounded;
+        
+        bool isCarryingWoman = womanModel != null && womanModel.activeInHierarchy;
+
+        firefighterAnimator.SetBool("isRunning", isRunning);
+        firefighterAnimator.SetBool("isGrounded", grounded);
+        firefighterAnimator.SetBool("isFalling", isFalling);
+        firefighterAnimator.SetBool("isHoldingTrash", isHoldingTrash);
+        firefighterAnimator.SetBool("isCarryingWoman", isCarryingWoman);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            grounded = true;
+
+            if (firefighterAnimator != null)
+            {
+                firefighterAnimator.SetBool("isGrounded", true);
+                firefighterAnimator.SetBool("isFalling", false);
+                firefighterAnimator.SetTrigger("Landing");
+            }
+        }
+    }
+
+    private void Turn(bool direction)
+    {
+        if (pushing)
+            return;
+
+        if (direction)
+        {
+            transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 90, 0);
         }
     }
 
@@ -145,12 +212,47 @@ public class Movement : MonoBehaviour
     {
         onLedge = true;
         activeLedge = currentLedge;
-        playerRB.isKinematic = true;
+
+        if (playerRB != null)
+            playerRB.isKinematic = true;
     }
 
     public void Push()
     {
         pushing = !pushing;
+    }
+    public void SetHoldingTrash(bool value)
+    {
+        isHoldingTrash = value;
+    }
+    public void SetCarryingWomanObject(GameObject woman)
+    {
+        womanModel = woman;
+    }
+    public void PlayItemPickUp()
+    {
+        if (firefighterAnimator != null)
+            firefighterAnimator.SetTrigger("ItemPickUp");
+    }
+    public void PlayAxeSwing()
+    {
+        if (firefighterAnimator != null)
+            firefighterAnimator.SetTrigger("AxeSwing");
+    }
+    public void PlayOpenDoor()
+    {
+        if (firefighterAnimator != null)
+            firefighterAnimator.SetTrigger("OpenDoor");
+    }
+    public void PlayDeath()
+    {
+        if (firefighterAnimator != null)
+            firefighterAnimator.SetTrigger("Death");
+    }
+    public void PlayWomanPutDown()
+    {
+        if (firefighterAnimator != null)
+            firefighterAnimator.SetTrigger("WomanPutDown");
     }
 
     private void SlowOn()
@@ -162,34 +264,10 @@ public class Movement : MonoBehaviour
     {
         slow = 1;
     }
-    
-    
-        
-    private void UpdateAnimations()
-    {
-        if (animator == null)
-        {
-            Debug.LogError("Animator is missing!");
-            return;
-        }
-
-        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f && grounded && !onLedge;
-
-        animator.SetBool("isRunning", isRunning);
-
-        AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
-
-       // Debug.Log(
-       //     "isRunning: " + animator.GetBool("isRunning") +
-       //     " | In transition: " + animator.IsInTransition(0) +
-       //     " | Idle: " + state.IsName("rig|Idle") +
-       //     " | Run: " + state.IsName("rig|Run") +
-       //     " | Normalized time: " + state.normalizedTime
-       // );
-    }
 
     private void PlayFootsteps()
     {
-        PlayerSounds.PlayFootsteps();
+        if (PlayerSounds != null)
+            PlayerSounds.PlayFootsteps();
     }
 }
