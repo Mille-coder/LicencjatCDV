@@ -7,9 +7,9 @@ public class CarryPairAnimator : MonoBehaviour
     [SerializeField] private Animator womanAnimator;
 
     [Header("State Names")]
-    [SerializeField] private string idleHoldingState = "IdleHoldingWoman";
-    [SerializeField] private string walkHoldingState = "WalkWithPersonOnHands";
-    [SerializeField] private string putDownState = "WomanPutDown";
+    [SerializeField] private string idleHoldingState = "RigFirefighter|IdleHoldingWoman";
+    [SerializeField] private string walkHoldingState = "RigFirefighter|WalkWithPersonOnHands";
+    [SerializeField] private string putDownState = "RigFirefighter|WomanPutDown";
 
     public void PlayIdleHolding()
     {
@@ -37,20 +37,11 @@ public class CarryPairAnimator : MonoBehaviour
             womanAnimator.Play(stateName, 0, 0f);
         else
             Debug.LogWarning("Woman Animator is missing.");
-
-        Debug.Log("Playing paired animation: " + stateName);
+        
     }
 
     private void Update()
     {
-        // Temporary tests
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            PlayIdleHolding();
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            PlayWalkHolding();
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            PlayWomanPutDown();
+        
     }
 }
