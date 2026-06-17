@@ -28,24 +28,9 @@ public class Movement : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody>();
 
-        if (playerRB == null)
-        {
-            Debug.LogError("No Rigidbody found on Player!");
-        }
         if (firefighterAnimator == null)
         {
             firefighterAnimator = GetComponentInChildren<Animator>();
-            Debug.LogWarning("Firefighter Animator was not assigned manually. Found: " +
-                             (firefighterAnimator != null ? firefighterAnimator.gameObject.name : "None"));
-        }
-
-        if (firefighterAnimator == null)
-        {
-            Debug.LogError("No Firefighter Animator assigned/found!");
-        }
-        else
-        {
-            Debug.Log("Firefighter Animator assigned: " + firefighterAnimator.gameObject.name);
         }
     }
 
@@ -65,8 +50,6 @@ public class Movement : MonoBehaviour
     {
         HandleLedgeInput();
         HandleMovementInput();
-        HandleDebugAnimationInput();
-
         UpdateAnimations();
     }
 
@@ -159,25 +142,20 @@ public class Movement : MonoBehaviour
         if (firefighterAnimator == null)
             return;
     }
-
+    
     private void UpdateAnimations()
     {
         if (firefighterAnimator == null || playerRB == null)
             return;
 
         bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f && grounded && !onLedge;
-
         bool isFalling = playerRB.velocity.y < -0.1f && !grounded;
-        
-        bool isCarryingWoman = womanModel != null && womanModel.activeInHierarchy;
 
         firefighterAnimator.SetBool("isRunning", isRunning);
         firefighterAnimator.SetBool("isGrounded", grounded);
         firefighterAnimator.SetBool("isFalling", isFalling);
-        firefighterAnimator.SetBool("isHoldingTrash", isHoldingTrash);
-        firefighterAnimator.SetBool("isCarryingWoman", isCarryingWoman);
     }
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
@@ -221,38 +199,11 @@ public class Movement : MonoBehaviour
     {
         pushing = !pushing;
     }
-    public void SetHoldingTrash(bool value)
-    {
-        isHoldingTrash = value;
-    }
-    public void SetCarryingWomanObject(GameObject woman)
-    {
-        womanModel = woman;
-    }
-    public void PlayItemPickUp()
-    {
-        if (firefighterAnimator != null)
-            firefighterAnimator.SetTrigger("ItemPickUp");
-    }
-    public void PlayAxeSwing()
-    {
-        if (firefighterAnimator != null)
-            firefighterAnimator.SetTrigger("AxeSwing");
-    }
-    public void PlayOpenDoor()
-    {
-        if (firefighterAnimator != null)
-            firefighterAnimator.SetTrigger("OpenDoor");
-    }
+   
     public void PlayDeath()
     {
         if (firefighterAnimator != null)
             firefighterAnimator.SetTrigger("Death");
-    }
-    public void PlayWomanPutDown()
-    {
-        if (firefighterAnimator != null)
-            firefighterAnimator.SetTrigger("WomanPutDown");
     }
 
     private void SlowOn()
