@@ -49,7 +49,7 @@ public class PopupManager : MonoBehaviour
         if (!isPopupOpen)
             return;
 
-        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftAlt) || Input.GetKeyDown(KeyCode.RightAlt))
         {
             if (isTyping)
             {
