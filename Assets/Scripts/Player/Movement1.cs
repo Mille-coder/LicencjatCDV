@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -17,7 +18,26 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private Animator firefighterAnimator;
     [SerializeField] private GameObject womanModel;
+    
+    [Header("Ledge Animation")]
+    [SerializeField] private string isOnLedgeBool = "isOnLedge";
+    [SerializeField] private string climbTrigger = "Climb";
+    [SerializeField] private float ledgeClimbFinishDelay = 0.8f;
+    [SerializeField] private bool finishClimbWithAnimationEvent = true;
 
+    [Header("Ledge Grab Protection")]
+    [SerializeField] private float ledgeGrabCooldownAfterClimb = 0.5f;
+
+    private bool isClimbingLedge = false;
+    private Coroutine ledgeClimbRoutine;
+    private float nextAllowedLedgeGrabTime = 0f;
+
+    public bool IsOnLedge => onLedge || isClimbingLedge;
+    
+    
+    
+    [SerializeField] private CarryPairAnimator carryPairAnimator;
+    [SerializeField] private Equipment equipment;
     private Ledge activeLedge;
     private bool grounded = true;
     private Rigidbody playerRB;
@@ -32,8 +52,17 @@ public class Movement : MonoBehaviour
         {
             firefighterAnimator = GetComponentInChildren<Animator>();
         }
-    }
 
+        if (carryPairAnimator == null)
+        {
+            carryPairAnimator = GetComponent<CarryPairAnimator>();
+        }
+
+        if (equipment == null)
+        {
+            equipment = GetComponent<Equipment>();
+        }
+    }
     private void OnEnable()
     {
         GlobalEvents.OnSlowOff += SlowOff;
@@ -70,25 +99,96 @@ public class Movement : MonoBehaviour
 
     private void HandleLedgeInput()
     {
-        if (!onLedge)
+        if (!onLedge || isClimbingLedge)
             return;
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            transform.position = activeLedge.Gettargetpos();
-            onLedge = false;
-
-            if (playerRB != null)
-                playerRB.isKinematic = false;
+            StartLedgeClimb();
         }
     }
+    private void StartLedgeClimb()
+    {
+        if (activeLedge == null)
+            return;
 
+        isClimbingLedge = true;
+
+        if (playerRB != null)
+        {
+            playerRB.velocity = Vector3.zero;
+            playerRB.angularVelocity = Vector3.zero;
+        }
+
+        if (firefighterAnimator != null)
+        {
+            firefighterAnimator.SetBool(isOnLedgeBool, false);
+            firefighterAnimator.SetBool("isRunning", false);
+            firefighterAnimator.SetBool("isHoldingTrash", false);
+            firefighterAnimator.ResetTrigger(climbTrigger);
+            firefighterAnimator.SetTrigger(climbTrigger);
+        }
+
+        if (!finishClimbWithAnimationEvent)
+        {
+            if (ledgeClimbRoutine != null)
+                StopCoroutine(ledgeClimbRoutine);
+
+            ledgeClimbRoutine = StartCoroutine(FinishLedgeClimbAfterDelay());
+        }
+    }
+    private IEnumerator FinishLedgeClimbAfterDelay()
+    {
+        yield return new WaitForSeconds(ledgeClimbFinishDelay);
+
+        FinishLedgeClimb();
+    }
+    public void FinishLedgeClimb()
+    {
+        if (!onLedge && !isClimbingLedge)
+            return;
+
+        nextAllowedLedgeGrabTime = Time.time + ledgeGrabCooldownAfterClimb;
+
+        Vector3 targetPosition = transform.position;
+
+        if (activeLedge != null)
+        {
+            targetPosition = activeLedge.Gettargetpos();
+        }
+
+        onLedge = false;
+        isClimbingLedge = false;
+        activeLedge = null;
+        grounded = true;
+
+        if (playerRB != null)
+        {
+            playerRB.isKinematic = false;
+            playerRB.velocity = Vector3.zero;
+            playerRB.angularVelocity = Vector3.zero;
+            playerRB.position = targetPosition;
+        }
+        else
+        {
+            transform.position = targetPosition;
+        }
+
+        if (firefighterAnimator != null)
+        {
+            firefighterAnimator.SetBool(isOnLedgeBool, false);
+            firefighterAnimator.SetBool("isRunning", false);
+        }
+
+        ledgeClimbRoutine = null;
+    }
+    
     private void HandleMovementInput()
     {
         if (playerRB == null)
             return;
 
-        if (onLedge)
+        if (onLedge || isClimbingLedge)
             return;
 
         if (grounded)
@@ -148,12 +248,24 @@ public class Movement : MonoBehaviour
         if (firefighterAnimator == null || playerRB == null)
             return;
 
-        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f && grounded && !onLedge;
-        bool isFalling = playerRB.velocity.y < -0.1f && !grounded;
+        bool isBusyOnLedge = onLedge || isClimbingLedge;
+
+        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f 
+                         && grounded 
+                         && !isBusyOnLedge;
+
+        if (isBusyOnLedge)
+        {
+            isRunning = false;
+        }
 
         firefighterAnimator.SetBool("isRunning", isRunning);
-        firefighterAnimator.SetBool("isGrounded", grounded);
-        firefighterAnimator.SetBool("isFalling", isFalling);
+        firefighterAnimator.SetBool("isHoldingTrash", isHoldingTrash);
+
+        if (onLedge && !isClimbingLedge)
+        {
+            firefighterAnimator.SetBool(isOnLedgeBool, true);
+        }
     }
     
     private void OnCollisionEnter(Collision collision)
@@ -161,13 +273,6 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("Floor"))
         {
             grounded = true;
-
-            if (firefighterAnimator != null)
-            {
-                firefighterAnimator.SetBool("isGrounded", true);
-                firefighterAnimator.SetBool("isFalling", false);
-                firefighterAnimator.SetTrigger("Landing");
-            }
         }
     }
 
@@ -188,16 +293,62 @@ public class Movement : MonoBehaviour
 
     public void Grabledge(Ledge currentLedge)
     {
+        if (currentLedge == null)
+            return;
+
+        if (Time.time < nextAllowedLedgeGrabTime)
+            return;
+
+        if (onLedge || isClimbingLedge)
+            return;
+
+        if (pushing || isHoldingTrash)
+            return;
+
         onLedge = true;
+        isClimbingLedge = false;
         activeLedge = currentLedge;
+        grounded = false;
 
         if (playerRB != null)
+        {
+            playerRB.velocity = Vector3.zero;
+            playerRB.angularVelocity = Vector3.zero;
             playerRB.isKinematic = true;
+            playerRB.position = currentLedge.GetHangPosition();
+        }
+        else
+        {
+            transform.position = currentLedge.GetHangPosition();
+        }
+
+        transform.rotation = currentLedge.GetHangRotation();
+
+        if (firefighterAnimator != null)
+        {
+            firefighterAnimator.SetBool("isRunning", false);
+            firefighterAnimator.SetBool("isHoldingTrash", false);
+            firefighterAnimator.SetBool(isOnLedgeBool, true);
+        }
     }
 
     public void Push()
     {
+        if (onLedge || isClimbingLedge)
+            return;
+
         pushing = !pushing;
+        isHoldingTrash = pushing;
+
+        if (firefighterAnimator != null)
+        {
+            firefighterAnimator.SetBool("isHoldingTrash", isHoldingTrash);
+
+            if (!isHoldingTrash)
+            {
+                firefighterAnimator.SetBool("isRunning", false);
+            }
+        }
     }
    
     public void PlayDeath()

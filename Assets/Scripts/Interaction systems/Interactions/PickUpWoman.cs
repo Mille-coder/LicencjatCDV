@@ -19,7 +19,17 @@ public class PickUpWoman : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        interactor.gameObject.GetComponent<Equipment>().Grabwoman();
+        Equipment equipment = interactor.gameObject.GetComponent<Equipment>();
+        if (equipment != null)
+        {
+            equipment.Grabwoman();
+        }
+
+        CarryPairAnimator carryPairAnimator = interactor.gameObject.GetComponent<CarryPairAnimator>();
+        if (carryPairAnimator != null)
+        {
+            carryPairAnimator.StartCarrying();
+        }
 
         OnPickup?.Invoke();
 

@@ -1,14 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Dropoff : MonoBehaviour, IInteractable
 {
-    [SerializeField] GameObject Woman1;
-    [SerializeField] GameObject Woman2;
-    [SerializeField] GameObject CarriedWoman;
+    [SerializeField] private GameObject Woman1;
+    [SerializeField] private GameObject Woman2;
+    [SerializeField] private GameObject CarriedWoman;
 
     [SerializeField] private Equipment equipment;
 
@@ -17,8 +16,13 @@ public class Dropoff : MonoBehaviour, IInteractable
     [SerializeField] private Image keyImage;
     [SerializeField] private Sprite eIcon;
 
+    [Header("Dropoff Animation")]
+    [SerializeField] private float putDownHideDelay = 0.8f;
+
     [Header("Event po odłożeniu kobiety")]
     public UnityEvent onDropoff;
+
+    private bool isDroppingOff;
 
     private void Start()
     {
@@ -28,7 +32,12 @@ public class Dropoff : MonoBehaviour, IInteractable
 
     public bool CanInteract(Interactor interactor)
     {
-        bool canInteract = equipment != null && equipment.haswoman;
+        Equipment currentEquipment = equipment;
+
+        if (currentEquipment == null && interactor != null)
+            currentEquipment = interactor.gameObject.GetComponent<Equipment>();
+
+        bool canInteract = currentEquipment != null && currentEquipment.haswoman && !isDroppingOff;
 
         if (promptCanvas != null)
             promptCanvas.SetActive(canInteract);
@@ -41,29 +50,60 @@ public class Dropoff : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        if (equipment == null || !equipment.haswoman)
+        Equipment currentEquipment = equipment;
+
+        if (currentEquipment == null && interactor != null)
+            currentEquipment = interactor.gameObject.GetComponent<Equipment>();
+
+        if (currentEquipment == null || !currentEquipment.haswoman || isDroppingOff)
             return false;
 
         if (promptCanvas != null)
             promptCanvas.SetActive(false);
 
-        if (Woman1.activeSelf)
+        CarryPairAnimator carryPairAnimator = null;
+
+        if (interactor != null)
+            carryPairAnimator = interactor.gameObject.GetComponent<CarryPairAnimator>();
+
+        if (carryPairAnimator != null)
         {
-            Woman2.SetActive(true);
-            CarriedWoman.SetActive(false);
+            carryPairAnimator.StopCarrying();
+        }
+
+        StartCoroutine(DropoffRoutine(currentEquipment, carryPairAnimator));
+
+        return true;
+    }
+
+    private IEnumerator DropoffRoutine(Equipment currentEquipment, CarryPairAnimator carryPairAnimator)
+    {
+        isDroppingOff = true;
+
+        yield return new WaitForSeconds(putDownHideDelay);
+
+        if (Woman1 != null && Woman1.activeSelf)
+        {
+            if (Woman2 != null)
+                Woman2.SetActive(true);
         }
         else
         {
-            Woman1.SetActive(true);
-            CarriedWoman.SetActive(false);
+            if (Woman1 != null)
+                Woman1.SetActive(true);
         }
 
-        equipment.haswoman = false;
+        if (carryPairAnimator != null)
+            carryPairAnimator.HideCarriedWoman();
+        else if (CarriedWoman != null)
+            CarriedWoman.SetActive(false);
+
+        currentEquipment.haswoman = false;
 
         onDropoff?.Invoke();
 
         gameObject.SetActive(false);
 
-        return true;
+        isDroppingOff = false;
     }
 }
