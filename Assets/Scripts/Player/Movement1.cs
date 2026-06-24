@@ -129,20 +129,22 @@ public class Movement : MonoBehaviour
             firefighterAnimator.SetTrigger(climbTrigger);
         }
 
-        if (!finishClimbWithAnimationEvent)
-        {
-            if (ledgeClimbRoutine != null)
-                StopCoroutine(ledgeClimbRoutine);
+        if (ledgeClimbRoutine != null)
+            StopCoroutine(ledgeClimbRoutine);
 
-            ledgeClimbRoutine = StartCoroutine(FinishLedgeClimbAfterDelay());
-        }
+        ledgeClimbRoutine = StartCoroutine(FinishLedgeClimbAfterDelay());
     }
+    
     private IEnumerator FinishLedgeClimbAfterDelay()
     {
         yield return new WaitForSeconds(ledgeClimbFinishDelay);
 
-        FinishLedgeClimb();
+        if (onLedge || isClimbingLedge)
+        {
+            FinishLedgeClimb();
+        }
     }
+    
     public void FinishLedgeClimb()
     {
         if (!onLedge && !isClimbingLedge)
@@ -182,7 +184,6 @@ public class Movement : MonoBehaviour
 
         ledgeClimbRoutine = null;
     }
-    
     private void HandleMovementInput()
     {
         if (playerRB == null)
@@ -211,9 +212,17 @@ public class Movement : MonoBehaviour
 
                 grounded = false;
 
-                if (firefighterAnimator != null)
+                bool carryingWoman = equipment != null && equipment.haswoman;
+
+                if (carryingWoman)
                 {
-                    firefighterAnimator.SetTrigger("Jump");
+                    if (carryPairAnimator != null)
+                        carryPairAnimator.PlayJumpWithWoman();
+                }
+                else
+                {
+                    if (firefighterAnimator != null)
+                        firefighterAnimator.SetTrigger("Jump");
                 }
             }
         }
@@ -250,8 +259,8 @@ public class Movement : MonoBehaviour
 
         bool isBusyOnLedge = onLedge || isClimbingLedge;
 
-        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f 
-                         && grounded 
+        bool isRunning = Mathf.Abs(playerRB.velocity.x) > 0.1f
+                         && grounded
                          && !isBusyOnLedge;
 
         if (isBusyOnLedge)
@@ -261,6 +270,11 @@ public class Movement : MonoBehaviour
 
         firefighterAnimator.SetBool("isRunning", isRunning);
         firefighterAnimator.SetBool("isHoldingTrash", isHoldingTrash);
+
+        if (equipment != null && equipment.haswoman && carryPairAnimator != null && !isBusyOnLedge)
+        {
+            carryPairAnimator.SetCarryWalking(isRunning);
+        }
 
         if (onLedge && !isClimbingLedge)
         {

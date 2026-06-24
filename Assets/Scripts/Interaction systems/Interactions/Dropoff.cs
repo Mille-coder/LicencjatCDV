@@ -64,7 +64,12 @@ public class Dropoff : MonoBehaviour, IInteractable
         CarryPairAnimator carryPairAnimator = null;
 
         if (interactor != null)
+        {
             carryPairAnimator = interactor.gameObject.GetComponent<CarryPairAnimator>();
+
+            if (carryPairAnimator == null)
+                carryPairAnimator = interactor.gameObject.GetComponentInChildren<CarryPairAnimator>(true);
+        }
 
         if (carryPairAnimator != null)
         {
@@ -95,10 +100,12 @@ public class Dropoff : MonoBehaviour, IInteractable
 
         if (carryPairAnimator != null)
             carryPairAnimator.HideCarriedWoman();
-        else if (CarriedWoman != null)
-            CarriedWoman.SetActive(false);
 
-        currentEquipment.haswoman = false;
+        if (currentEquipment != null)
+            currentEquipment.Dropwoman();
+
+        if (CarriedWoman != null)
+            CarriedWoman.SetActive(false);
 
         onDropoff?.Invoke();
 

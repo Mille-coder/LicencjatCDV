@@ -26,6 +26,10 @@ public class PickUpWoman : MonoBehaviour, IInteractable
         }
 
         CarryPairAnimator carryPairAnimator = interactor.gameObject.GetComponent<CarryPairAnimator>();
+
+        if (carryPairAnimator == null)
+            carryPairAnimator = interactor.gameObject.GetComponentInChildren<CarryPairAnimator>(true);
+
         if (carryPairAnimator != null)
         {
             carryPairAnimator.StartCarrying();
@@ -33,9 +37,11 @@ public class PickUpWoman : MonoBehaviour, IInteractable
 
         OnPickup?.Invoke();
 
-        RuntimeManager.PlayOneShot(pickupSound, transform.position); // 🔥 FMOD
+        RuntimeManager.PlayOneShot(pickupSound, transform.position);
+
         dropoff.SetActive(true);
         gameObject.SetActive(false);
+
         return true;
     }
 }
